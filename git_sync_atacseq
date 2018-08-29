@@ -1,0 +1,21 @@
+
+
+# locations
+# xli6@durga:/users/xli6/scripts
+# local:/Users/xinli/Dropbox/scripts
+
+
+# remove accidentally pushed large files
+# git filter-branch --index-filter 'git rm --cached --ignore-unmatch pivus/gcta/nohup.out' -f
+
+git init
+git pull --all
+git add --all
+git commit -am "`date`"
+git remote add atacseq https://github.com/xinli-git/atacseq
+# change to ssh url
+# git remote add atacseq git@github.com:xinli-git/atacseq
+git push --set-upstream atacseq master
+
+
+
