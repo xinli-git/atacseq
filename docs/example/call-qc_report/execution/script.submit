@@ -1,0 +1,15 @@
+#!/bin/bash
+sbatch \
+--export=ALL \
+-J cromwell_3653815d_qc_report \
+-D /home/xli6/projects/atacseq/atac/cromwell-executions/atac/3653815d-a13c-4737-8183-22aec1b80ee5/call-qc_report \
+-o /home/xli6/projects/atacseq/atac/cromwell-executions/atac/3653815d-a13c-4737-8183-22aec1b80ee5/call-qc_report/execution/stdout \
+-e /home/xli6/projects/atacseq/atac/cromwell-executions/atac/3653815d-a13c-4737-8183-22aec1b80ee5/call-qc_report/execution/stderr \
+-t 60 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=1 \
+--mem=4000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac/cromwell-executions/atac/3653815d-a13c-4737-8183-22aec1b80ee5/call-qc_report/execution/script"
