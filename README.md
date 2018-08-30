@@ -5,4 +5,4 @@
 
 
 ## example qc report
-* https://github.com/xinli-git/atacseq/tree/master/docs/example/call-qc_report/execution/qc.html
+* https://xinli-git.github.io/atacseq/example/call-qc_report/execution/qc.html
