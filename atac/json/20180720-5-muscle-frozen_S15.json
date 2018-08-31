@@ -1,0 +1,34 @@
+{
+"atac.qc_report.name" : "20180720-5-muscle-frozen_S15",
+"atac.qc_report.desc" : "ATAC-seq on motrpac",
+"atac.pipeline_type" : "atac",
+"atac.genome_tsv" : "/home/xli6/projects/atacseq/atac/reference/YOUR_OWN_GENOME.tsv",
+
+
+   "atac.paired_end" : true,
+    "atac.multimapping" : 4,
+
+    "atac.trim_adapter.auto_detect_adapter" : true,
+
+    "atac.smooth_win" : 73,
+    "atac.enable_idr" : true,
+    "atac.idr_thresh" : 0.05,
+
+        "atac.bowtie2.cpu" : 4,
+        "atac.bowtie2.mem_mb" : 20000,
+        "atac.bowtie2.time_hr" : 10,
+
+
+"atac.fastqs_rep1_R1" : [
+"/home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180720-5-muscle-frozen_S15_L001_R1_001.fastq.gz"
+,"/home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180720-5-muscle-frozen_S15_L002_R1_001.fastq.gz"
+,"/home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180720-5-muscle-frozen_S15_L003_R1_001.fastq.gz"
+,"/home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180720-5-muscle-frozen_S15_L004_R1_001.fastq.gz"
+],
+"atac.fastqs_rep1_R2" : [
+"/home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180720-5-muscle-frozen_S15_L001_R2_001.fastq.gz"
+,"/home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180720-5-muscle-frozen_S15_L002_R2_001.fastq.gz"
+,"/home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180720-5-muscle-frozen_S15_L003_R2_001.fastq.gz"
+,"/home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180720-5-muscle-frozen_S15_L004_R2_001.fastq.gz"
+]
+}
