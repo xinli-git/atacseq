@@ -2,7 +2,7 @@
 "atac.qc_report.name" : "Undetermined_S0",
 "atac.qc_report.desc" : "ATAC-seq on motrpac",
 "atac.pipeline_type" : "atac",
-"atac.genome_tsv" : "/users/xli6//projects/atacseq/atac_durga/reference/Rnor/Rnor6.tsv",
+"atac.genome_tsv" : "/users/xli6//projects/atacseq/atac_durga/reference/rn6/rn6.tsv",
 
 
     "atac.paired_end" : true,

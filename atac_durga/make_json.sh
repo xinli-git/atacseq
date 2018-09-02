@@ -2,7 +2,9 @@
 
 
 base_json=~/projects/atacseq/atac_durga/json/base_json
-genome_ref=~/projects/atacseq/atac_durga/reference/Rnor/Rnor6.tsv
+# this ensembl genome does not work
+# genome_ref=~/projects/atacseq/atac_durga/reference/Rnor/Rnor6.tsv
+genome_ref=~/projects/atacseq/atac_durga/reference/rn6/rn6.tsv
 
 fastq_dir=~/projects/atacseq/fastq/fastq_durga/FASTQ_RUN8
 

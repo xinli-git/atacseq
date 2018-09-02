@@ -1,109 +1,109 @@
-[2018-09-01 14:35:24,91] [info] Running with database db.url = jdbc:hsqldb:mem:a0601ddc-1aeb-4408-9948-e32a3c5363a8;shutdown=false;hsqldb.tx=mvcc
-[2018-09-01 14:35:40,77] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
-[2018-09-01 14:35:40,81] [info] [RenameWorkflowOptionsInMetadata] 100%
-[2018-09-01 14:35:41,62] [info] Running with database db.url = jdbc:hsqldb:mem:7ac3b5e8-95c0-4fe8-86eb-71d965d062f6;shutdown=false;hsqldb.tx=mvcc
-[2018-09-01 14:35:42,58] [[38;5;220mwarn[0m] This actor factory is deprecated. Please use cromwell.backend.google.pipelines.v1alpha2.PipelinesApiLifecycleActorFactory for PAPI v1 or cromwell.backend.google.pipelines.v2alpha1.PipelinesApiLifecycleActorFactory for PAPI v2
-[2018-09-01 14:35:42,59] [[38;5;220mwarn[0m] Couldn't find a suitable DSN, defaulting to a Noop one.
-[2018-09-01 14:35:42,59] [info] Using noop to send events.
-[2018-09-01 14:35:43,47] [info] Slf4jLogger started
-[2018-09-01 14:35:43,90] [info] Workflow heartbeat configuration:
+[2018-09-02 10:59:28,48] [info] Running with database db.url = jdbc:hsqldb:mem:afa9e0e5-1d79-4b79-a7b6-4371afae3cdb;shutdown=false;hsqldb.tx=mvcc
+[2018-09-02 10:59:38,99] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
+[2018-09-02 10:59:39,02] [info] [RenameWorkflowOptionsInMetadata] 100%
+[2018-09-02 10:59:39,24] [info] Running with database db.url = jdbc:hsqldb:mem:7563bea2-18bb-4067-bf4c-6318877d8420;shutdown=false;hsqldb.tx=mvcc
+[2018-09-02 10:59:39,89] [[38;5;220mwarn[0m] This actor factory is deprecated. Please use cromwell.backend.google.pipelines.v1alpha2.PipelinesApiLifecycleActorFactory for PAPI v1 or cromwell.backend.google.pipelines.v2alpha1.PipelinesApiLifecycleActorFactory for PAPI v2
+[2018-09-02 10:59:39,90] [[38;5;220mwarn[0m] Couldn't find a suitable DSN, defaulting to a Noop one.
+[2018-09-02 10:59:39,91] [info] Using noop to send events.
+[2018-09-02 10:59:40,32] [info] Slf4jLogger started
+[2018-09-02 10:59:40,59] [info] Workflow heartbeat configuration:
 {
-  "cromwellId" : "cromid-f00470c",
+  "cromwellId" : "cromid-1443e7f",
   "heartbeatInterval" : "2 minutes",
   "ttl" : "10 minutes",
   "writeBatchSize" : 10000,
   "writeThreshold" : 10000
 }
-[2018-09-01 14:35:44,26] [info] Metadata summary refreshing every 2 seconds.
-[2018-09-01 14:35:44,69] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
-[2018-09-01 14:35:44,69] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
-[2018-09-01 14:35:44,69] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
-[2018-09-01 14:35:46,16] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
-[2018-09-01 14:35:46,18] [info] SingleWorkflowRunnerActor: Version 34
-[2018-09-01 14:35:46,18] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:46,19] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:46,19] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:46,21] [info] PAPIQueryManager Running with 3 workers
-[2018-09-01 14:35:46,21] [info] SingleWorkflowRunnerActor: Submitting workflow
-[2018-09-01 14:35:46,26] [info] 1 new workflows fetched
-[2018-09-01 14:35:46,26] [info] WorkflowManagerActor Starting workflow [38;5;2m977225f8-e1c1-41ec-8951-b555ea014ab7[0m
-[2018-09-01 14:35:46,27] [info] Unspecified type (Unspecified version) workflow 977225f8-e1c1-41ec-8951-b555ea014ab7 submitted
-[2018-09-01 14:35:46,28] [info] WorkflowManagerActor Successfully started WorkflowActor-977225f8-e1c1-41ec-8951-b555ea014ab7
-[2018-09-01 14:35:46,33] [info] Retrieved 1 workflows from the WorkflowStoreActor
-[2018-09-01 14:35:46,35] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
-[2018-09-01 14:35:46,45] [info] MaterializeWorkflowDescriptorActor [[38;5;2m977225f8[0m]: Parsing workflow as WDL draft-2
-[2018-09-01 14:35:46,48] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m977225f8-e1c1-41ec-8951-b555ea014ab7[0m
-[2018-09-01 14:35:46,49] [[38;5;220mwarn[0m] SingleWorkflowRunnerActor: received unexpected message: Done in state RunningSwraData
-[2018-09-01 14:36:08,83] [info] MaterializeWorkflowDescriptorActor [[38;5;2m977225f8[0m]: Call-to-Backend assignments: atac.idr_ppr -> Local, atac.filter -> Local, atac.macs2 -> Local, atac.overlap_ppr -> Local, atac.pool_ta -> Local, atac.macs2_ppr1 -> Local, atac.xcor -> Local, atac.pool_ta_pr1 -> Local, atac.reproducibility_idr -> Local, atac.idr_pr -> Local, atac.read_genome_tsv -> Local, atac.macs2_pr1 -> Local, atac.reproducibility_overlap -> Local, atac.spr -> Local, atac.bowtie2 -> Local, atac.qc_report -> Local, atac.overlap -> Local, atac.idr -> Local, atac.trim_adapter -> Local, atac.pool_ta_pr2 -> Local, atac.bam2ta -> Local, atac.overlap_pr -> Local, atac.macs2_pooled -> Local, atac.ataqc -> Local, atac.macs2_ppr2 -> Local, atac.macs2_pr2 -> Local
-[2018-09-01 14:36:09,07] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,07] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,07] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,07] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,07] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,12] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,13] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,14] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,17] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,17] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,18] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,18] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,26] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,26] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,26] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [preemptible, disks, cpu, time, memory] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,26] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,32] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,32] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,33] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,33] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,34] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,34] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,34] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,35] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,44] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,44] [[38;5;220mwarn[0m] Local [[38;5;2m977225f8[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,15] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Starting atac.read_genome_tsv
-[2018-09-01 14:36:12,15] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Condition met: 'enable_idr'. Running conditional section
-[2018-09-01 14:36:12,15] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Condition met: '!align_only && !true_rep_only'. Running conditional section
-[2018-09-01 14:36:12,15] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Condition met: '!true_rep_only'. Running conditional section
-[2018-09-01 14:36:12,15] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Condition met: '!disable_xcor'. Running conditional section
-[2018-09-01 14:36:12,16] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Condition met: 'enable_idr'. Running conditional section
-[2018-09-01 14:36:12,16] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Condition met: '!align_only && !true_rep_only && enable_idr'. Running conditional section
-[2018-09-01 14:36:13,28] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.read_genome_tsv:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:36:13,91] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.read_genome_tsv:NA:1]: [38;5;5mcat /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-read_genome_tsv/inputs/1482462591/Rnor6.tsv[0m
-[2018-09-01 14:36:13,96] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.read_genome_tsv:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-read_genome_tsv/execution/script
-[2018-09-01 14:36:14,66] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.read_genome_tsv:NA:1]: job id: 38529
-[2018-09-01 14:36:14,66] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.read_genome_tsv:NA:1]: Status change from - to Done
-[2018-09-01 14:36:16,25] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Starting atac.trim_adapter
-[2018-09-01 14:36:17,19] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.trim_adapter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:36:17,24] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.trim_adapter:0:1]: [38;5;5mpython $(which encode_trim_adapter.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-trim_adapter/shard-0/execution/write_tsv_ed2f816ac04d9ebc16086829b8d0d838.tmp \
-	--adapters /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-trim_adapter/shard-0/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
+[2018-09-02 10:59:40,67] [info] Metadata summary refreshing every 2 seconds.
+[2018-09-02 10:59:40,75] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
+[2018-09-02 10:59:40,78] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
+[2018-09-02 10:59:40,78] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
+[2018-09-02 10:59:42,43] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
+[2018-09-02 10:59:42,52] [info] JES batch polling interval is 33333 milliseconds
+[2018-09-02 10:59:42,52] [info] JES batch polling interval is 33333 milliseconds
+[2018-09-02 10:59:42,52] [info] JES batch polling interval is 33333 milliseconds
+[2018-09-02 10:59:42,54] [info] SingleWorkflowRunnerActor: Version 34
+[2018-09-02 10:59:42,54] [info] SingleWorkflowRunnerActor: Submitting workflow
+[2018-09-02 10:59:42,54] [info] PAPIQueryManager Running with 3 workers
+[2018-09-02 10:59:42,65] [info] Unspecified type (Unspecified version) workflow 031ecef0-f318-4008-b839-6a65ad87b92e submitted
+[2018-09-02 10:59:42,70] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m031ecef0-f318-4008-b839-6a65ad87b92e[0m
+[2018-09-02 10:59:42,70] [info] 1 new workflows fetched
+[2018-09-02 10:59:42,70] [info] WorkflowManagerActor Starting workflow [38;5;2m031ecef0-f318-4008-b839-6a65ad87b92e[0m
+[2018-09-02 10:59:42,71] [[38;5;220mwarn[0m] SingleWorkflowRunnerActor: received unexpected message: Done in state RunningSwraData
+[2018-09-02 10:59:42,72] [info] WorkflowManagerActor Successfully started WorkflowActor-031ecef0-f318-4008-b839-6a65ad87b92e
+[2018-09-02 10:59:42,72] [info] Retrieved 1 workflows from the WorkflowStoreActor
+[2018-09-02 10:59:42,73] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
+[2018-09-02 10:59:42,87] [info] MaterializeWorkflowDescriptorActor [[38;5;2m031ecef0[0m]: Parsing workflow as WDL draft-2
+[2018-09-02 10:59:57,83] [info] MaterializeWorkflowDescriptorActor [[38;5;2m031ecef0[0m]: Call-to-Backend assignments: atac.trim_adapter -> Local, atac.bowtie2 -> Local, atac.overlap -> Local, atac.idr_pr -> Local, atac.pool_ta -> Local, atac.macs2_ppr1 -> Local, atac.reproducibility_overlap -> Local, atac.macs2 -> Local, atac.read_genome_tsv -> Local, atac.macs2_ppr2 -> Local, atac.ataqc -> Local, atac.qc_report -> Local, atac.spr -> Local, atac.pool_ta_pr2 -> Local, atac.macs2_pr1 -> Local, atac.idr_ppr -> Local, atac.filter -> Local, atac.overlap_pr -> Local, atac.idr -> Local, atac.overlap_ppr -> Local, atac.xcor -> Local, atac.reproducibility_idr -> Local, atac.macs2_pooled -> Local, atac.pool_ta_pr1 -> Local, atac.bam2ta -> Local, atac.macs2_pr2 -> Local
+[2018-09-02 10:59:57,91] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,91] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [preemptible, disks, cpu, time, memory] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,91] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,91] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,91] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,91] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,91] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,91] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,92] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,93] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,93] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,93] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,93] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 10:59:57,93] [[38;5;220mwarn[0m] Local [[38;5;2m031ecef0[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-02 11:00:00,16] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Starting atac.read_genome_tsv
+[2018-09-02 11:00:00,16] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Condition met: 'enable_idr'. Running conditional section
+[2018-09-02 11:00:00,18] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Condition met: 'enable_idr'. Running conditional section
+[2018-09-02 11:00:00,18] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Condition met: '!true_rep_only'. Running conditional section
+[2018-09-02 11:00:00,18] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Condition met: '!align_only && !true_rep_only && enable_idr'. Running conditional section
+[2018-09-02 11:00:00,18] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Condition met: '!align_only && !true_rep_only'. Running conditional section
+[2018-09-02 11:00:00,18] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Condition met: '!disable_xcor'. Running conditional section
+[2018-09-02 11:00:00,56] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.read_genome_tsv:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:00:01,18] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.read_genome_tsv:NA:1]: [38;5;5mcat /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-read_genome_tsv/inputs/879136058/rn6.tsv[0m
+[2018-09-02 11:00:01,23] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.read_genome_tsv:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-read_genome_tsv/execution/script
+[2018-09-02 11:00:04,28] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Starting atac.trim_adapter
+[2018-09-02 11:00:04,45] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.trim_adapter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:00:04,48] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.trim_adapter:0:1]: [38;5;5mpython $(which encode_trim_adapter.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-trim_adapter/shard-0/execution/write_tsv_3cbdc0c7ff722190dd8b547050201af5.tmp \
+	--adapters /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-trim_adapter/shard-0/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
 	--paired-end \
 	--auto-detect-adapter \
 	--min-trim-len 5 \
 	--err-rate 0.1 \
 	--nth 1[0m
-[2018-09-01 14:36:17,27] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.trim_adapter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-trim_adapter/shard-0/execution/script
-[2018-09-01 14:36:19,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.trim_adapter:0:1]: job id: 38735
-[2018-09-01 14:36:19,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.trim_adapter:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:36:50,35] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.trim_adapter:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:36:51,96] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Starting atac.bowtie2
-[2018-09-01 14:36:52,18] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bowtie2:0:1]: Unrecognized runtime attribute keys: preemptible, disks, cpu, time, memory
-[2018-09-01 14:36:52,20] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bowtie2:0:1]: [38;5;5mpython $(which encode_bowtie2.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-bowtie2/shard-0/inputs/1039591591/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.tar \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-bowtie2/shard-0/inputs/1307255244/merge_fastqs_R1_20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.fastq.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-bowtie2/shard-0/inputs/1307255244/merge_fastqs_R2_20180725-1-Gastroc-002-piece_S1_L001_R2_001.trim.merged.fastq.gz \
+[2018-09-02 11:00:04,49] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.trim_adapter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-trim_adapter/shard-0/execution/script
+[2018-09-02 11:00:05,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.trim_adapter:0:1]: job id: 84514
+[2018-09-02 11:00:05,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.read_genome_tsv:NA:1]: job id: 84236
+[2018-09-02 11:00:05,82] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.trim_adapter:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:00:05,82] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.read_genome_tsv:NA:1]: Status change from - to Done
+[2018-09-02 11:00:38,85] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.trim_adapter:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:00:39,98] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Starting atac.bowtie2
+[2018-09-02 11:00:40,46] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bowtie2:0:1]: Unrecognized runtime attribute keys: preemptible, disks, cpu, time, memory
+[2018-09-02 11:00:40,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bowtie2:0:1]: [38;5;5mpython $(which encode_bowtie2.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-bowtie2/shard-0/inputs/-2142767566/rn6.fa.tar \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-bowtie2/shard-0/inputs/1760164373/merge_fastqs_R1_20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.fastq.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-bowtie2/shard-0/inputs/1760164373/merge_fastqs_R2_20180725-1-Gastroc-002-piece_S1_L001_R2_001.trim.merged.fastq.gz \
 	--paired-end \
 	--multimapping 4 \
 	 \
 	--nth 2[0m
-[2018-09-01 14:36:52,21] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bowtie2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-bowtie2/shard-0/execution/script
-[2018-09-01 14:36:54,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bowtie2:0:1]: job id: 39220
-[2018-09-01 14:36:54,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bowtie2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:44:29,02] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bowtie2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:44:35,04] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Starting atac.filter
-[2018-09-01 14:44:35,18] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.filter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:44:35,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.filter:0:1]: [38;5;5mpython $(which encode_filter.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-filter/shard-0/inputs/-752751267/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.bam \
+[2018-09-02 11:00:40,47] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bowtie2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-bowtie2/shard-0/execution/script
+[2018-09-02 11:00:40,80] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bowtie2:0:1]: job id: 84991
+[2018-09-02 11:00:40,80] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bowtie2:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:06:22,90] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bowtie2:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:06:28,82] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Starting atac.filter
+[2018-09-02 11:06:29,44] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.filter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:06:29,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.filter:0:1]: [38;5;5mpython $(which encode_filter.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-filter/shard-0/inputs/-1177728140/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.bam \
 	--paired-end \
 	--multimapping 4 \
 	--dup-marker picard \
@@ -113,100 +113,100 @@
 # ugly part to deal with optional outputs with Google JES backend
 
 touch null[0m
-[2018-09-01 14:44:35,22] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.filter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-filter/shard-0/execution/script
-[2018-09-01 14:44:39,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.filter:0:1]: job id: 39896
-[2018-09-01 14:44:39,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.filter:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:47:24,05] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.filter:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:47:29,46] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Starting atac.bam2ta
-[2018-09-01 14:47:30,18] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bam2ta:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:47:30,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bam2ta:0:1]: [38;5;5mpython $(which encode_bam2ta.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-bam2ta/shard-0/inputs/-1504827475/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.bam \
+[2018-09-02 11:06:29,48] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.filter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-filter/shard-0/execution/script
+[2018-09-02 11:06:30,80] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.filter:0:1]: job id: 85604
+[2018-09-02 11:06:30,80] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.filter:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:08:18,75] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.filter:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:08:24,08] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Starting atac.bam2ta
+[2018-09-02 11:08:24,45] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bam2ta:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:08:24,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bam2ta:0:1]: [38;5;5mpython $(which encode_bam2ta.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-bam2ta/shard-0/inputs/-1102894410/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.bam \
 	--paired-end \
 	 \
 	--regex-grep-v-ta 'chrM' \
 	--subsample 0 \[0m
-[2018-09-01 14:47:30,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bam2ta:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-bam2ta/shard-0/execution/script
-[2018-09-01 14:47:34,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bam2ta:0:1]: job id: 40274
-[2018-09-01 14:47:34,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bam2ta:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:47:48,31] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.bam2ta:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:47:51,90] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Condition NOT met: 'length(tas_) > 1'. Bypassing conditional section
-[2018-09-01 14:47:51,90] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Condition NOT met: '!true_rep_only && length(tas_) > 1'. Bypassing conditional section
-[2018-09-01 14:47:53,97] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Starting atac.spr, atac.xcor, atac.macs2
-[2018-09-01 14:47:54,18] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.spr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:47:54,18] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.xcor:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:47:54,18] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.spr:0:1]: [38;5;5mpython $(which encode_spr.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-spr/shard-0/inputs/-1295695929/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+[2018-09-02 11:08:24,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bam2ta:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-bam2ta/shard-0/execution/script
+[2018-09-02 11:08:25,80] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bam2ta:0:1]: job id: 85835
+[2018-09-02 11:08:25,80] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bam2ta:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:08:42,82] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.bam2ta:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:08:46,52] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Condition NOT met: 'length(tas_) > 1'. Bypassing conditional section
+[2018-09-02 11:08:46,52] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Condition NOT met: '!true_rep_only && length(tas_) > 1'. Bypassing conditional section
+[2018-09-02 11:08:48,59] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Starting atac.spr, atac.xcor, atac.macs2
+[2018-09-02 11:08:49,45] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.spr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:08:49,45] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.xcor:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:08:49,45] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:08:49,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.spr:0:1]: [38;5;5mpython $(which encode_spr.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-spr/shard-0/inputs/-893762864/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
 	--paired-end[0m
-[2018-09-01 14:47:54,18] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.xcor:0:1]: [38;5;5mpython $(which encode_xcor.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-xcor/shard-0/inputs/-1295695929/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+[2018-09-02 11:08:49,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.xcor:0:1]: [38;5;5mpython $(which encode_xcor.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-xcor/shard-0/inputs/-893762864/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
 	--paired-end \
 	--subsample 25000000 \
 	--speak=0 \
 	--nth 2[0m
-[2018-09-01 14:47:54,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.spr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-spr/shard-0/execution/script
-[2018-09-01 14:47:54,19] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:47:54,20] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.xcor:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-xcor/shard-0/execution/script
-[2018-09-01 14:47:54,22] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2/shard-0/inputs/-1295695929/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
+[2018-09-02 11:08:49,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2/shard-0/inputs/-893762864/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2/shard-0/inputs/868722754/rn6.chrom.sizes \
 	--cap-num-peak 300000 \
 	--pval-thresh 0.01 \
 	--smooth-win 73 \
 	--make-signal \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2/shard-0/inputs/1159650167/null
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2/shard-0/inputs/868722754/null
 
 # ugly part to deal with optional outputs with Google JES backend
 
 touch null[0m
-[2018-09-01 14:47:54,23] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2/shard-0/execution/script
-[2018-09-01 14:47:54,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2:0:1]: job id: 40346
-[2018-09-01 14:47:54,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.spr:0:1]: job id: 40324
-[2018-09-01 14:47:54,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.xcor:0:1]: job id: 40335
-[2018-09-01 14:47:54,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.xcor:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:47:54,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:47:54,64] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.spr:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:47:56,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.spr:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:47:58,05] [info] WorkflowExecutionActor-977225f8-e1c1-41ec-8951-b555ea014ab7 [[38;5;2m977225f8[0m]: Starting atac.macs2_pr2, atac.macs2_pr1
-[2018-09-01 14:47:58,18] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr1:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:47:58,18] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:47:58,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2_pr2/shard-0/inputs/676500666/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2_pr2/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
+[2018-09-02 11:08:49,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.spr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-spr/shard-0/execution/script
+[2018-09-02 11:08:49,48] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.xcor:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-xcor/shard-0/execution/script
+[2018-09-02 11:08:49,49] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2/shard-0/execution/script
+[2018-09-02 11:08:50,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.spr:0:1]: job id: 85893
+[2018-09-02 11:08:50,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2:0:1]: job id: 85913
+[2018-09-02 11:08:50,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.xcor:0:1]: job id: 85903
+[2018-09-02 11:08:50,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.spr:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:08:50,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.xcor:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:08:50,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:08:52,54] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.spr:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:08:53,69] [info] WorkflowExecutionActor-031ecef0-f318-4008-b839-6a65ad87b92e [[38;5;2m031ecef0[0m]: Starting atac.macs2_pr1, atac.macs2_pr2
+[2018-09-02 11:08:54,45] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr1:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:08:54,46] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-09-02 11:08:54,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr1:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2_pr1/shard-0/inputs/799085064/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2_pr1/shard-0/inputs/868722754/rn6.chrom.sizes \
 	--cap-num-peak 300000 \
 	--pval-thresh 0.01 \
 	--smooth-win 73 \
 	 \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2_pr2/shard-0/inputs/1159650167/null
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2_pr1/shard-0/inputs/868722754/null
 
 # ugly part to deal with optional outputs with Google JES backend
 touch null.pval.signal.bigwig null.fc.signal.bigwig
 touch null[0m
-[2018-09-01 14:47:58,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr1:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2_pr1/shard-0/inputs/-1654845327/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2_pr1/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
+[2018-09-02 11:08:54,47] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2_pr2/shard-0/inputs/-1164536239/20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2_pr2/shard-0/inputs/868722754/rn6.chrom.sizes \
 	--cap-num-peak 300000 \
 	--pval-thresh 0.01 \
 	--smooth-win 73 \
 	 \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2_pr1/shard-0/inputs/1159650167/null
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2_pr2/shard-0/inputs/868722754/null
 
 # ugly part to deal with optional outputs with Google JES backend
 touch null.pval.signal.bigwig null.fc.signal.bigwig
 touch null[0m
-[2018-09-01 14:47:58,20] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2_pr2/shard-0/execution/script
-[2018-09-01 14:47:58,23] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr1:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/977225f8-e1c1-41ec-8951-b555ea014ab7/call-macs2_pr1/shard-0/execution/script
-[2018-09-01 14:47:59,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr2:0:1]: job id: 40459
-[2018-09-01 14:47:59,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr1:0:1]: job id: 40469
-[2018-09-01 14:47:59,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr1:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:47:59,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:48:30,18] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.xcor:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:50:30,16] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:51:32,07] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr1:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:51:41,68] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m977225f8[0matac.macs2_pr2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:51:42,49] [[38;5;1merror[0m] WorkflowManagerActor Workflow 977225f8-e1c1-41ec-8951-b555ea014ab7 failed (during ExecutingWorkflowState): cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
+[2018-09-02 11:08:54,47] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr1:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2_pr1/shard-0/execution/script
+[2018-09-02 11:08:54,49] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/031ecef0-f318-4008-b839-6a65ad87b92e/call-macs2_pr2/shard-0/execution/script
+[2018-09-02 11:08:55,80] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr1:0:1]: job id: 86018
+[2018-09-02 11:08:55,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr2:0:1]: job id: 86028
+[2018-09-02 11:08:55,81] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr1:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:08:55,82] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr2:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-02 11:09:22,59] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.xcor:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:10:54,74] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:12:06,68] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr1:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:12:42,03] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m031ecef0[0matac.macs2_pr2:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-02 11:12:42,20] [[38;5;1merror[0m] WorkflowManagerActor Workflow 031ecef0-f318-4008-b839-6a65ad87b92e failed (during ExecutingWorkflowState): cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
 Bad output 'macs2.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
 
 Success([])
@@ -296,1037 +296,38 @@ Success([])
 	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
 
-[2018-09-01 14:51:42,49] [info] WorkflowManagerActor WorkflowActor-977225f8-e1c1-41ec-8951-b555ea014ab7 is in a terminal state: WorkflowFailedState
-[2018-09-01 14:53:01,36] [info] SingleWorkflowRunnerActor workflow finished with status 'Failed'.
-[2018-09-01 14:53:04,70] [info] Workflow polling stopped
-[2018-09-01 14:53:04,71] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
-[2018-09-01 14:53:04,71] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
-[2018-09-01 14:53:04,71] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
-[2018-09-01 14:53:04,72] [info] Aborting all running workflows.
-[2018-09-01 14:53:04,72] [info] JobExecutionTokenDispenser stopped
-[2018-09-01 14:53:04,72] [info] WorkflowStoreActor stopped
-[2018-09-01 14:53:04,72] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
-[2018-09-01 14:53:04,72] [info] WorkflowLogCopyRouter stopped
-[2018-09-01 14:53:04,72] [info] WorkflowManagerActor All workflows finished
-[2018-09-01 14:53:04,72] [info] WorkflowManagerActor stopped
-[2018-09-01 14:53:04,72] [info] Connection pools shut down
-[2018-09-01 14:53:04,72] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
-[2018-09-01 14:53:04,72] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
-[2018-09-01 14:53:04,72] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
-[2018-09-01 14:53:04,72] [info] SubWorkflowStoreActor stopped
-[2018-09-01 14:53:04,72] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
-[2018-09-01 14:53:04,72] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
-[2018-09-01 14:53:04,72] [info] Shutting down IoProxy - Timeout = 1800 seconds
-[2018-09-01 14:53:04,72] [info] WriteMetadataActor Shutting down: 0 queued messages to process
-[2018-09-01 14:53:04,72] [info] KvWriteActor Shutting down: 0 queued messages to process
-[2018-09-01 14:53:04,72] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
-[2018-09-01 14:53:04,72] [info] JobStoreActor stopped
-[2018-09-01 14:53:04,72] [info] CallCacheWriteActor stopped
-[2018-09-01 14:53:04,72] [info] DockerHashActor stopped
-[2018-09-01 14:53:04,72] [info] IoProxy stopped
-[2018-09-01 14:53:04,73] [info] ServiceRegistryActor stopped
-[2018-09-01 14:53:04,74] [info] Database closed
-[2018-09-01 14:53:04,74] [info] Stream materializer shut down
-[2018-09-01 14:53:04,78] [info] Automatic shutdown of the async connection
-[2018-09-01 14:53:04,78] [info] Gracefully shutdown sentry threads.
-[2018-09-01 14:53:04,78] [info] Shutdown finished.
-Workflow 977225f8-e1c1-41ec-8951-b555ea014ab7 transitioned to state Failed
-[2018-09-01 14:35:24,80] [info] Running with database db.url = jdbc:hsqldb:mem:e24c52f2-514f-4710-8f97-800287831004;shutdown=false;hsqldb.tx=mvcc
-[2018-09-01 14:35:38,09] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
-[2018-09-01 14:35:38,12] [info] [RenameWorkflowOptionsInMetadata] 100%
-[2018-09-01 14:35:38,35] [info] Running with database db.url = jdbc:hsqldb:mem:faca1aeb-fe8a-4e16-bce7-49a7582767d7;shutdown=false;hsqldb.tx=mvcc
-[2018-09-01 14:35:39,64] [[38;5;220mwarn[0m] This actor factory is deprecated. Please use cromwell.backend.google.pipelines.v1alpha2.PipelinesApiLifecycleActorFactory for PAPI v1 or cromwell.backend.google.pipelines.v2alpha1.PipelinesApiLifecycleActorFactory for PAPI v2
-[2018-09-01 14:35:39,64] [[38;5;220mwarn[0m] Couldn't find a suitable DSN, defaulting to a Noop one.
-[2018-09-01 14:35:39,65] [info] Using noop to send events.
-[2018-09-01 14:35:40,59] [info] Slf4jLogger started
-[2018-09-01 14:35:40,98] [info] Workflow heartbeat configuration:
-{
-  "cromwellId" : "cromid-5c69a6b",
-  "heartbeatInterval" : "2 minutes",
-  "ttl" : "10 minutes",
-  "writeBatchSize" : 10000,
-  "writeThreshold" : 10000
-}
-[2018-09-01 14:35:41,11] [info] Metadata summary refreshing every 2 seconds.
-[2018-09-01 14:35:41,32] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
-[2018-09-01 14:35:41,34] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
-[2018-09-01 14:35:42,25] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
-[2018-09-01 14:35:44,05] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
-[2018-09-01 14:35:44,10] [info] SingleWorkflowRunnerActor: Version 34
-[2018-09-01 14:35:44,11] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:44,11] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:44,11] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:44,12] [info] PAPIQueryManager Running with 3 workers
-[2018-09-01 14:35:44,13] [info] SingleWorkflowRunnerActor: Submitting workflow
-[2018-09-01 14:35:44,20] [info] Unspecified type (Unspecified version) workflow 77b90c42-8e40-473e-8ec2-7b3a39e5ee2b submitted
-[2018-09-01 14:35:44,26] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m77b90c42-8e40-473e-8ec2-7b3a39e5ee2b[0m
-[2018-09-01 14:35:44,26] [info] 1 new workflows fetched
-[2018-09-01 14:35:44,26] [info] WorkflowManagerActor Starting workflow [38;5;2m77b90c42-8e40-473e-8ec2-7b3a39e5ee2b[0m
-[2018-09-01 14:35:44,26] [[38;5;220mwarn[0m] SingleWorkflowRunnerActor: received unexpected message: Done in state RunningSwraData
-[2018-09-01 14:35:44,27] [info] WorkflowManagerActor Successfully started WorkflowActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b
-[2018-09-01 14:35:44,27] [info] Retrieved 1 workflows from the WorkflowStoreActor
-[2018-09-01 14:35:44,29] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
-[2018-09-01 14:35:44,39] [info] MaterializeWorkflowDescriptorActor [[38;5;2m77b90c42[0m]: Parsing workflow as WDL draft-2
-[2018-09-01 14:36:06,52] [info] MaterializeWorkflowDescriptorActor [[38;5;2m77b90c42[0m]: Call-to-Backend assignments: atac.macs2_pr1 -> Local, atac.ataqc -> Local, atac.idr -> Local, atac.filter -> Local, atac.macs2_ppr1 -> Local, atac.macs2_ppr2 -> Local, atac.bam2ta -> Local, atac.pool_ta_pr1 -> Local, atac.pool_ta -> Local, atac.idr_ppr -> Local, atac.macs2 -> Local, atac.read_genome_tsv -> Local, atac.idr_pr -> Local, atac.reproducibility_overlap -> Local, atac.macs2_pooled -> Local, atac.trim_adapter -> Local, atac.overlap_pr -> Local, atac.overlap -> Local, atac.bowtie2 -> Local, atac.xcor -> Local, atac.reproducibility_idr -> Local, atac.pool_ta_pr2 -> Local, atac.overlap_ppr -> Local, atac.qc_report -> Local, atac.spr -> Local, atac.macs2_pr2 -> Local
-[2018-09-01 14:36:06,72] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,73] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,73] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,73] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,74] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,74] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,74] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,78] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,79] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,79] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,84] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,84] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,84] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,89] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,89] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,91] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,91] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,91] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,92] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [preemptible, disks, cpu, time, memory] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,93] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,93] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,99] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,99] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,99] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:06,99] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:07,01] [[38;5;220mwarn[0m] Local [[38;5;2m77b90c42[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:09,46] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Starting atac.read_genome_tsv
-[2018-09-01 14:36:09,46] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Condition met: '!true_rep_only'. Running conditional section
-[2018-09-01 14:36:09,47] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Condition met: 'enable_idr'. Running conditional section
-[2018-09-01 14:36:09,54] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Condition met: '!disable_xcor'. Running conditional section
-[2018-09-01 14:36:09,55] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Condition met: '!align_only && !true_rep_only && enable_idr'. Running conditional section
-[2018-09-01 14:36:09,55] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Condition met: '!align_only && !true_rep_only'. Running conditional section
-[2018-09-01 14:36:09,55] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Condition met: 'enable_idr'. Running conditional section
-[2018-09-01 14:36:10,29] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.read_genome_tsv:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:36:11,24] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.read_genome_tsv:NA:1]: [38;5;5mcat /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-read_genome_tsv/inputs/1482462591/Rnor6.tsv[0m
-[2018-09-01 14:36:11,36] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.read_genome_tsv:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-read_genome_tsv/execution/script
-[2018-09-01 14:36:13,91] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Starting atac.trim_adapter
-[2018-09-01 14:36:14,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.trim_adapter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:36:14,11] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.trim_adapter:0:1]: [38;5;5mpython $(which encode_trim_adapter.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-trim_adapter/shard-0/execution/write_tsv_bb5677c496c852629b63407b9e11c6a6.tmp \
-	--adapters /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-trim_adapter/shard-0/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
-	--paired-end \
-	--auto-detect-adapter \
-	--min-trim-len 5 \
-	--err-rate 0.1 \
-	--nth 1[0m
-[2018-09-01 14:36:14,11] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.trim_adapter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-trim_adapter/shard-0/execution/script
-[2018-09-01 14:36:16,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.trim_adapter:0:1]: job id: 38559
-[2018-09-01 14:36:16,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.read_genome_tsv:NA:1]: job id: 38323
-[2018-09-01 14:36:16,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.trim_adapter:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:36:16,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.read_genome_tsv:NA:1]: Status change from - to Done
-[2018-09-01 14:52:06,23] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.trim_adapter:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:52:07,59] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Starting atac.bowtie2
-[2018-09-01 14:52:08,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bowtie2:0:1]: Unrecognized runtime attribute keys: preemptible, disks, cpu, time, memory
-[2018-09-01 14:52:08,10] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bowtie2:0:1]: [38;5;5mpython $(which encode_bowtie2.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-bowtie2/shard-0/inputs/1039591591/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.tar \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-bowtie2/shard-0/inputs/232027647/merge_fastqs_R1_20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.fastq.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-bowtie2/shard-0/inputs/232027647/merge_fastqs_R2_20180725-2-Gastroc-002-powder_S2_L001_R2_001.trim.merged.fastq.gz \
-	--paired-end \
-	--multimapping 4 \
-	 \
-	--nth 2[0m
-[2018-09-01 14:52:08,11] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bowtie2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-bowtie2/shard-0/execution/script
-[2018-09-01 14:52:11,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bowtie2:0:1]: job id: 41020
-[2018-09-01 14:52:11,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bowtie2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 17:50:38,58] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bowtie2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 17:50:44,71] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Starting atac.filter
-[2018-09-01 17:50:45,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.filter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 17:50:45,08] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.filter:0:1]: [38;5;5mpython $(which encode_filter.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-filter/shard-0/inputs/487294282/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.bam \
-	--paired-end \
-	--multimapping 4 \
-	--dup-marker picard \
-	--mapq-thresh 30 \
-	 \
-	--nth 1
-# ugly part to deal with optional outputs with Google JES backend
-
-touch null[0m
-[2018-09-01 17:50:45,11] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.filter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-filter/shard-0/execution/script
-[2018-09-01 17:50:46,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.filter:0:1]: job id: 49267
-[2018-09-01 17:50:46,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.filter:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 18:55:57,77] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.filter:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 18:56:03,50] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Starting atac.bam2ta
-[2018-09-01 18:56:04,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bam2ta:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 18:56:04,08] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bam2ta:0:1]: [38;5;5mpython $(which encode_bam2ta.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-bam2ta/shard-0/inputs/336289312/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.bam \
-	--paired-end \
-	 \
-	--regex-grep-v-ta 'chrM' \
-	--subsample 0 \[0m
-[2018-09-01 18:56:04,08] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bam2ta:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-bam2ta/shard-0/execution/script
-[2018-09-01 18:56:06,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bam2ta:0:1]: job id: 52157
-[2018-09-01 18:56:06,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bam2ta:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 19:08:18,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.bam2ta:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 19:08:21,98] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Condition NOT met: 'length(tas_) > 1'. Bypassing conditional section
-[2018-09-01 19:08:21,99] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Condition NOT met: '!true_rep_only && length(tas_) > 1'. Bypassing conditional section
-[2018-09-01 19:08:24,06] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Starting atac.macs2, atac.spr, atac.xcor
-[2018-09-01 19:08:24,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.spr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 19:08:24,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.xcor:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 19:08:24,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 19:08:24,08] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2/shard-0/inputs/545420858/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	--make-signal \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-
-touch null[0m
-[2018-09-01 19:08:24,09] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2/shard-0/execution/script
-[2018-09-01 19:08:24,10] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.spr:0:1]: [38;5;5mpython $(which encode_spr.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-spr/shard-0/inputs/545420858/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--paired-end[0m
-[2018-09-01 19:08:24,10] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.xcor:0:1]: [38;5;5mpython $(which encode_xcor.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-xcor/shard-0/inputs/545420858/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--paired-end \
-	--subsample 25000000 \
-	--speak=0 \
-	--nth 2[0m
-[2018-09-01 19:08:24,10] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.spr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-spr/shard-0/execution/script
-[2018-09-01 19:08:24,11] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.xcor:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-xcor/shard-0/execution/script
-[2018-09-01 19:08:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.spr:0:1]: job id: 53016
-[2018-09-01 19:08:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2:0:1]: job id: 53007
-[2018-09-01 19:08:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.xcor:0:1]: job id: 53027
-[2018-09-01 19:08:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 19:08:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.spr:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 19:08:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.xcor:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 19:09:23,09] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.spr:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 19:09:24,23] [info] WorkflowExecutionActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b [[38;5;2m77b90c42[0m]: Starting atac.macs2_pr2, atac.macs2_pr1
-[2018-09-01 19:09:25,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 19:09:25,07] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr1:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 19:09:25,08] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2_pr2/shard-0/inputs/-596169945/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2_pr2/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	 \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2_pr2/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-touch null.pval.signal.bigwig null.fc.signal.bigwig
-touch null[0m
-[2018-09-01 19:09:25,08] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr1:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2_pr1/shard-0/inputs/1367451358/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2_pr1/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	 \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2_pr1/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-touch null.pval.signal.bigwig null.fc.signal.bigwig
-touch null[0m
-[2018-09-01 19:09:25,10] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr1:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2_pr1/shard-0/execution/script
-[2018-09-01 19:09:25,10] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/77b90c42-8e40-473e-8ec2-7b3a39e5ee2b/call-macs2_pr2/shard-0/execution/script
-[2018-09-01 19:09:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr1:0:1]: job id: 53130
-[2018-09-01 19:09:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr2:0:1]: job id: 53132
-[2018-09-01 19:09:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 19:09:26,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr1:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 19:14:27,34] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr1:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 19:14:28,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2_pr2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 19:19:28,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.xcor:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 19:34:05,14] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m77b90c42[0matac.macs2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 19:34:05,23] [[38;5;1merror[0m] WorkflowManagerActor Workflow 77b90c42-8e40-473e-8ec2-7b3a39e5ee2b failed (during ExecutingWorkflowState): cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2_pr1.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2_pr1.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2_pr2.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2_pr2.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-[2018-09-01 19:34:05,24] [info] WorkflowManagerActor WorkflowActor-77b90c42-8e40-473e-8ec2-7b3a39e5ee2b is in a terminal state: WorkflowFailedState
-[2018-09-01 19:34:48,10] [info] SingleWorkflowRunnerActor workflow finished with status 'Failed'.
-[2018-09-01 19:34:51,36] [info] Workflow polling stopped
-[2018-09-01 19:34:51,37] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
-[2018-09-01 19:34:51,38] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
-[2018-09-01 19:34:51,38] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
-[2018-09-01 19:34:51,38] [info] Aborting all running workflows.
-[2018-09-01 19:34:51,38] [info] JobExecutionTokenDispenser stopped
-[2018-09-01 19:34:51,38] [info] WorkflowStoreActor stopped
-[2018-09-01 19:34:51,38] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
-[2018-09-01 19:34:51,38] [info] WorkflowLogCopyRouter stopped
-[2018-09-01 19:34:51,38] [info] WorkflowManagerActor All workflows finished
-[2018-09-01 19:34:51,38] [info] WorkflowManagerActor stopped
-[2018-09-01 19:34:51,38] [info] Connection pools shut down
-[2018-09-01 19:34:51,38] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
-[2018-09-01 19:34:51,38] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
-[2018-09-01 19:34:51,38] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
-[2018-09-01 19:34:51,39] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
-[2018-09-01 19:34:51,39] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
-[2018-09-01 19:34:51,39] [info] Shutting down IoProxy - Timeout = 1800 seconds
-[2018-09-01 19:34:51,39] [info] SubWorkflowStoreActor stopped
-[2018-09-01 19:34:51,39] [info] JobStoreActor stopped
-[2018-09-01 19:34:51,39] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
-[2018-09-01 19:34:51,39] [info] CallCacheWriteActor stopped
-[2018-09-01 19:34:51,39] [info] WriteMetadataActor Shutting down: 0 queued messages to process
-[2018-09-01 19:34:51,39] [info] IoProxy stopped
-[2018-09-01 19:34:51,39] [info] KvWriteActor Shutting down: 0 queued messages to process
-[2018-09-01 19:34:51,39] [info] DockerHashActor stopped
-[2018-09-01 19:34:51,39] [info] ServiceRegistryActor stopped
-[2018-09-01 19:34:51,41] [info] Database closed
-[2018-09-01 19:34:51,41] [info] Stream materializer shut down
-[2018-09-01 19:34:51,45] [info] Automatic shutdown of the async connection
-[2018-09-01 19:34:51,45] [info] Gracefully shutdown sentry threads.
-[2018-09-01 19:34:51,46] [info] Shutdown finished.
-Workflow 77b90c42-8e40-473e-8ec2-7b3a39e5ee2b transitioned to state Failed
-[2018-09-01 14:35:25,64] [info] Running with database db.url = jdbc:hsqldb:mem:51b40863-ea55-4e26-9ea3-8327f6e3fcc1;shutdown=false;hsqldb.tx=mvcc
-[2018-09-01 14:35:41,65] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
-[2018-09-01 14:35:41,67] [info] [RenameWorkflowOptionsInMetadata] 100%
-[2018-09-01 14:35:42,50] [info] Running with database db.url = jdbc:hsqldb:mem:7ecffbf8-e64c-4d8f-be45-592f6fc6a7dc;shutdown=false;hsqldb.tx=mvcc
-[2018-09-01 14:35:43,69] [[38;5;220mwarn[0m] This actor factory is deprecated. Please use cromwell.backend.google.pipelines.v1alpha2.PipelinesApiLifecycleActorFactory for PAPI v1 or cromwell.backend.google.pipelines.v2alpha1.PipelinesApiLifecycleActorFactory for PAPI v2
-[2018-09-01 14:35:43,70] [[38;5;220mwarn[0m] Couldn't find a suitable DSN, defaulting to a Noop one.
-[2018-09-01 14:35:43,70] [info] Using noop to send events.
-[2018-09-01 14:35:44,38] [info] Slf4jLogger started
-[2018-09-01 14:35:44,80] [info] Workflow heartbeat configuration:
-{
-  "cromwellId" : "cromid-ace1fad",
-  "heartbeatInterval" : "2 minutes",
-  "ttl" : "10 minutes",
-  "writeBatchSize" : 10000,
-  "writeThreshold" : 10000
-}
-[2018-09-01 14:35:45,06] [info] Metadata summary refreshing every 2 seconds.
-[2018-09-01 14:35:45,62] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
-[2018-09-01 14:35:45,62] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
-[2018-09-01 14:35:45,62] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
-[2018-09-01 14:35:47,52] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
-[2018-09-01 14:35:47,56] [info] SingleWorkflowRunnerActor: Version 34
-[2018-09-01 14:35:47,58] [info] SingleWorkflowRunnerActor: Submitting workflow
-[2018-09-01 14:35:47,61] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:47,61] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:47,61] [info] PAPIQueryManager Running with 3 workers
-[2018-09-01 14:35:47,61] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:47,67] [info] Unspecified type (Unspecified version) workflow 49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 submitted
-[2018-09-01 14:35:47,73] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m49ffe3c4-d4ee-4807-af1a-bd3a0973bd10[0m
-[2018-09-01 14:35:47,73] [info] 1 new workflows fetched
-[2018-09-01 14:35:47,74] [info] WorkflowManagerActor Starting workflow [38;5;2m49ffe3c4-d4ee-4807-af1a-bd3a0973bd10[0m
-[2018-09-01 14:35:47,74] [[38;5;220mwarn[0m] SingleWorkflowRunnerActor: received unexpected message: Done in state RunningSwraData
-[2018-09-01 14:35:47,75] [info] WorkflowManagerActor Successfully started WorkflowActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10
-[2018-09-01 14:35:47,75] [info] Retrieved 1 workflows from the WorkflowStoreActor
-[2018-09-01 14:35:47,76] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
-[2018-09-01 14:35:47,83] [info] MaterializeWorkflowDescriptorActor [[38;5;2m49ffe3c4[0m]: Parsing workflow as WDL draft-2
-[2018-09-01 14:36:12,06] [info] MaterializeWorkflowDescriptorActor [[38;5;2m49ffe3c4[0m]: Call-to-Backend assignments: atac.macs2_ppr2 -> Local, atac.reproducibility_idr -> Local, atac.idr_pr -> Local, atac.qc_report -> Local, atac.ataqc -> Local, atac.pool_ta -> Local, atac.macs2_ppr1 -> Local, atac.bowtie2 -> Local, atac.idr -> Local, atac.reproducibility_overlap -> Local, atac.overlap_pr -> Local, atac.filter -> Local, atac.read_genome_tsv -> Local, atac.overlap -> Local, atac.spr -> Local, atac.bam2ta -> Local, atac.pool_ta_pr2 -> Local, atac.overlap_ppr -> Local, atac.pool_ta_pr1 -> Local, atac.macs2_pooled -> Local, atac.idr_ppr -> Local, atac.macs2 -> Local, atac.macs2_pr2 -> Local, atac.trim_adapter -> Local, atac.macs2_pr1 -> Local, atac.xcor -> Local
-[2018-09-01 14:36:12,33] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,34] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,34] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,36] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,36] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,36] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,38] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,38] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [preemptible, disks, cpu, time, memory] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,38] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,45] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,45] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,49] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,49] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,49] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,50] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,51] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,56] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,56] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,56] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,61] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,61] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,61] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,62] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,62] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,62] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:12,72] [[38;5;220mwarn[0m] Local [[38;5;2m49ffe3c4[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:15,20] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Starting atac.read_genome_tsv
-[2018-09-01 14:36:15,20] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Condition met: 'enable_idr'. Running conditional section
-[2018-09-01 14:36:15,20] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Condition met: '!true_rep_only'. Running conditional section
-[2018-09-01 14:36:15,20] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Condition met: '!align_only && !true_rep_only && enable_idr'. Running conditional section
-[2018-09-01 14:36:15,22] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Condition met: 'enable_idr'. Running conditional section
-[2018-09-01 14:36:15,22] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Condition met: '!disable_xcor'. Running conditional section
-[2018-09-01 14:36:15,22] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Condition met: '!align_only && !true_rep_only'. Running conditional section
-[2018-09-01 14:36:15,94] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.read_genome_tsv:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:36:17,41] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.read_genome_tsv:NA:1]: [38;5;5mcat /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-read_genome_tsv/inputs/1482462591/Rnor6.tsv[0m
-[2018-09-01 14:36:17,46] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.read_genome_tsv:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-read_genome_tsv/execution/script
-[2018-09-01 14:36:20,21] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Starting atac.trim_adapter
-[2018-09-01 14:36:20,55] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.trim_adapter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:36:20,60] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.trim_adapter:0:1]: [38;5;5mpython $(which encode_trim_adapter.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-trim_adapter/shard-0/execution/write_tsv_8c25664948469796363ca854719fef8a.tmp \
-	--adapters /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-trim_adapter/shard-0/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
-	--paired-end \
-	--auto-detect-adapter \
-	--min-trim-len 5 \
-	--err-rate 0.1 \
-	--nth 1[0m
-[2018-09-01 14:36:20,60] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.trim_adapter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-trim_adapter/shard-0/execution/script
-[2018-09-01 14:36:20,68] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.trim_adapter:0:1]: job id: 38887
-[2018-09-01 14:36:20,68] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.read_genome_tsv:NA:1]: job id: 38753
-[2018-09-01 14:36:20,68] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.trim_adapter:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 14:36:20,69] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.read_genome_tsv:NA:1]: Status change from - to Done
-[2018-09-01 14:57:03,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.trim_adapter:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 14:57:04,61] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Starting atac.bowtie2
-[2018-09-01 14:57:05,55] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bowtie2:0:1]: Unrecognized runtime attribute keys: preemptible, disks, cpu, time, memory
-[2018-09-01 14:57:05,58] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bowtie2:0:1]: [38;5;5mpython $(which encode_bowtie2.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-bowtie2/shard-0/inputs/1039591591/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.tar \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-bowtie2/shard-0/inputs/-1758626328/merge_fastqs_R1_20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.fastq.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-bowtie2/shard-0/inputs/-1758626328/merge_fastqs_R2_20180725-3-Gastroc-002-powder_S3_L001_R2_001.trim.merged.fastq.gz \
-	--paired-end \
-	--multimapping 4 \
-	 \
-	--nth 2[0m
-[2018-09-01 14:57:05,59] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bowtie2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-bowtie2/shard-0/execution/script
-[2018-09-01 14:57:05,66] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bowtie2:0:1]: job id: 41267
-[2018-09-01 14:57:05,66] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bowtie2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 18:58:12,66] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bowtie2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 18:58:18,36] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Starting atac.filter
-[2018-09-01 18:58:18,55] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.filter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 18:58:18,55] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.filter:0:1]: [38;5;5mpython $(which encode_filter.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-filter/shard-0/inputs/1550151617/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.bam \
-	--paired-end \
-	--multimapping 4 \
-	--dup-marker picard \
-	--mapq-thresh 30 \
-	 \
-	--nth 1
-# ugly part to deal with optional outputs with Google JES backend
-
-touch null[0m
-[2018-09-01 18:58:18,57] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.filter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-filter/shard-0/execution/script
-[2018-09-01 18:58:20,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.filter:0:1]: job id: 52255
-[2018-09-01 18:58:20,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.filter:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 20:09:04,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.filter:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 20:09:09,58] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Starting atac.bam2ta
-[2018-09-01 20:09:10,54] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bam2ta:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 20:09:10,56] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bam2ta:0:1]: [38;5;5mpython $(which encode_bam2ta.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-bam2ta/shard-0/inputs/924764361/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.bam \
-	--paired-end \
-	 \
-	--regex-grep-v-ta 'chrM' \
-	--subsample 0 \[0m
-[2018-09-01 20:09:10,57] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bam2ta:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-bam2ta/shard-0/execution/script
-[2018-09-01 20:09:10,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bam2ta:0:1]: job id: 56043
-[2018-09-01 20:09:10,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bam2ta:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 20:20:02,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.bam2ta:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 20:20:05,36] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Condition NOT met: 'length(tas_) > 1'. Bypassing conditional section
-[2018-09-01 20:20:05,36] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Condition NOT met: '!true_rep_only && length(tas_) > 1'. Bypassing conditional section
-[2018-09-01 20:20:07,44] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Starting atac.spr, atac.xcor, atac.macs2
-[2018-09-01 20:20:07,54] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.spr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 20:20:07,54] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 20:20:07,54] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.xcor:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 20:20:07,55] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.spr:0:1]: [38;5;5mpython $(which encode_spr.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-spr/shard-0/inputs/1133895907/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--paired-end[0m
-[2018-09-01 20:20:07,55] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.xcor:0:1]: [38;5;5mpython $(which encode_xcor.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-xcor/shard-0/inputs/1133895907/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--paired-end \
-	--subsample 25000000 \
-	--speak=0 \
-	--nth 2[0m
-[2018-09-01 20:20:07,55] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2/shard-0/inputs/1133895907/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	--make-signal \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-
-touch null[0m
-[2018-09-01 20:20:07,55] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.spr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-spr/shard-0/execution/script
-[2018-09-01 20:20:07,56] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.xcor:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-xcor/shard-0/execution/script
-[2018-09-01 20:20:07,57] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2/shard-0/execution/script
-[2018-09-01 20:20:10,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.spr:0:1]: job id: 56318
-[2018-09-01 20:20:10,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.xcor:0:1]: job id: 56322
-[2018-09-01 20:20:10,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2:0:1]: job id: 56338
-[2018-09-01 20:20:10,67] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.xcor:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 20:20:10,67] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 20:20:10,67] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.spr:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 20:21:23,53] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.spr:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 20:21:24,96] [info] WorkflowExecutionActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 [[38;5;2m49ffe3c4[0m]: Starting atac.macs2_pr1, atac.macs2_pr2
-[2018-09-01 20:21:25,54] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr1:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 20:21:25,54] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 20:21:25,55] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr1:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2_pr1/shard-0/inputs/1734960341/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2_pr1/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	 \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2_pr1/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-touch null.pval.signal.bigwig null.fc.signal.bigwig
-touch null[0m
-[2018-09-01 20:21:25,55] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2_pr2/shard-0/inputs/-228660962/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2_pr2/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	 \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2_pr2/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-touch null.pval.signal.bigwig null.fc.signal.bigwig
-touch null[0m
-[2018-09-01 20:21:25,56] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr1:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2_pr1/shard-0/execution/script
-[2018-09-01 20:21:25,56] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/49ffe3c4-d4ee-4807-af1a-bd3a0973bd10/call-macs2_pr2/shard-0/execution/script
-[2018-09-01 20:21:25,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr1:0:1]: job id: 56483
-[2018-09-01 20:21:25,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr2:0:1]: job id: 56485
-[2018-09-01 20:21:25,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr1:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 20:21:25,65] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 20:26:09,56] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr1:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 20:27:09,93] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2_pr2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 20:29:48,16] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.xcor:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 20:48:10,75] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m49ffe3c4[0matac.macs2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 20:48:11,44] [[38;5;1merror[0m] WorkflowManagerActor Workflow 49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 failed (during ExecutingWorkflowState): cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2_pr1.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2_pr1.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2_pr2.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2_pr2.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-[2018-09-01 20:48:11,44] [info] WorkflowManagerActor WorkflowActor-49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 is in a terminal state: WorkflowFailedState
-[2018-09-01 20:48:20,92] [info] SingleWorkflowRunnerActor workflow finished with status 'Failed'.
-[2018-09-01 20:48:25,64] [info] Workflow polling stopped
-[2018-09-01 20:48:25,66] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
-[2018-09-01 20:48:25,67] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
-[2018-09-01 20:48:25,67] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
-[2018-09-01 20:48:25,67] [info] Aborting all running workflows.
-[2018-09-01 20:48:25,67] [info] JobExecutionTokenDispenser stopped
-[2018-09-01 20:48:25,67] [info] WorkflowStoreActor stopped
-[2018-09-01 20:48:25,67] [info] WorkflowLogCopyRouter stopped
-[2018-09-01 20:48:25,67] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
-[2018-09-01 20:48:25,67] [info] WorkflowManagerActor All workflows finished
-[2018-09-01 20:48:25,67] [info] WorkflowManagerActor stopped
-[2018-09-01 20:48:25,68] [info] Connection pools shut down
-[2018-09-01 20:48:25,68] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
-[2018-09-01 20:48:25,68] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
-[2018-09-01 20:48:25,68] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
-[2018-09-01 20:48:25,68] [info] SubWorkflowStoreActor stopped
-[2018-09-01 20:48:25,68] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
-[2018-09-01 20:48:25,68] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
-[2018-09-01 20:48:25,68] [info] Shutting down IoProxy - Timeout = 1800 seconds
-[2018-09-01 20:48:25,68] [info] DockerHashActor stopped
-[2018-09-01 20:48:25,68] [info] IoProxy stopped
-[2018-09-01 20:48:25,68] [info] JobStoreActor stopped
-[2018-09-01 20:48:25,68] [info] WriteMetadataActor Shutting down: 0 queued messages to process
-[2018-09-01 20:48:25,68] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
-[2018-09-01 20:48:25,68] [info] KvWriteActor Shutting down: 0 queued messages to process
-[2018-09-01 20:48:25,68] [info] CallCacheWriteActor stopped
-[2018-09-01 20:48:25,68] [info] ServiceRegistryActor stopped
-[2018-09-01 20:48:25,70] [info] Database closed
-[2018-09-01 20:48:25,70] [info] Stream materializer shut down
-[2018-09-01 20:48:25,73] [info] Automatic shutdown of the async connection
-[2018-09-01 20:48:25,73] [info] Gracefully shutdown sentry threads.
-[2018-09-01 20:48:25,74] [info] Shutdown finished.
-Workflow 49ffe3c4-d4ee-4807-af1a-bd3a0973bd10 transitioned to state Failed
-[2018-09-01 14:35:24,58] [info] Running with database db.url = jdbc:hsqldb:mem:795dba4d-b6f7-4525-965b-9978fb89894b;shutdown=false;hsqldb.tx=mvcc
-[2018-09-01 14:35:39,63] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
-[2018-09-01 14:35:39,65] [info] [RenameWorkflowOptionsInMetadata] 100%
-[2018-09-01 14:35:40,45] [info] Running with database db.url = jdbc:hsqldb:mem:e65ae265-cff2-42d4-8527-5335a5388f9e;shutdown=false;hsqldb.tx=mvcc
-[2018-09-01 14:35:41,10] [[38;5;220mwarn[0m] This actor factory is deprecated. Please use cromwell.backend.google.pipelines.v1alpha2.PipelinesApiLifecycleActorFactory for PAPI v1 or cromwell.backend.google.pipelines.v2alpha1.PipelinesApiLifecycleActorFactory for PAPI v2
-[2018-09-01 14:35:41,12] [[38;5;220mwarn[0m] Couldn't find a suitable DSN, defaulting to a Noop one.
-[2018-09-01 14:35:41,12] [info] Using noop to send events.
-[2018-09-01 14:35:41,73] [info] Slf4jLogger started
-[2018-09-01 14:35:42,19] [info] Workflow heartbeat configuration:
-{
-  "cromwellId" : "cromid-01781bd",
-  "heartbeatInterval" : "2 minutes",
-  "ttl" : "10 minutes",
-  "writeBatchSize" : 10000,
-  "writeThreshold" : 10000
-}
-[2018-09-01 14:35:42,58] [info] Metadata summary refreshing every 2 seconds.
-[2018-09-01 14:35:43,25] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
-[2018-09-01 14:35:43,25] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
-[2018-09-01 14:35:43,25] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
-[2018-09-01 14:35:44,80] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
-[2018-09-01 14:35:44,83] [info] SingleWorkflowRunnerActor: Version 34
-[2018-09-01 14:35:44,84] [info] SingleWorkflowRunnerActor: Submitting workflow
-[2018-09-01 14:35:44,85] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:44,85] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:44,85] [info] JES batch polling interval is 33333 milliseconds
-[2018-09-01 14:35:44,86] [info] PAPIQueryManager Running with 3 workers
-[2018-09-01 14:35:44,93] [info] Unspecified type (Unspecified version) workflow 4442bab3-0535-4146-b6b7-5f1d529f2e64 submitted
-[2018-09-01 14:35:45,04] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m4442bab3-0535-4146-b6b7-5f1d529f2e64[0m
-[2018-09-01 14:35:45,05] [info] 1 new workflows fetched
-[2018-09-01 14:35:45,05] [[38;5;220mwarn[0m] SingleWorkflowRunnerActor: received unexpected message: Done in state RunningSwraData
-[2018-09-01 14:35:45,05] [info] WorkflowManagerActor Starting workflow [38;5;2m4442bab3-0535-4146-b6b7-5f1d529f2e64[0m
-[2018-09-01 14:35:45,05] [info] WorkflowManagerActor Successfully started WorkflowActor-4442bab3-0535-4146-b6b7-5f1d529f2e64
-[2018-09-01 14:35:45,06] [info] Retrieved 1 workflows from the WorkflowStoreActor
-[2018-09-01 14:35:45,08] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
-[2018-09-01 14:35:45,17] [info] MaterializeWorkflowDescriptorActor [[38;5;2m4442bab3[0m]: Parsing workflow as WDL draft-2
-[2018-09-01 14:36:07,70] [info] MaterializeWorkflowDescriptorActor [[38;5;2m4442bab3[0m]: Call-to-Backend assignments: atac.bowtie2 -> Local, atac.reproducibility_overlap -> Local, atac.pool_ta_pr2 -> Local, atac.idr -> Local, atac.macs2_ppr1 -> Local, atac.idr_ppr -> Local, atac.macs2_ppr2 -> Local, atac.qc_report -> Local, atac.overlap_pr -> Local, atac.macs2_pr1 -> Local, atac.overlap_ppr -> Local, atac.reproducibility_idr -> Local, atac.overlap -> Local, atac.spr -> Local, atac.idr_pr -> Local, atac.macs2 -> Local, atac.pool_ta_pr1 -> Local, atac.ataqc -> Local, atac.macs2_pr2 -> Local, atac.read_genome_tsv -> Local, atac.filter -> Local, atac.bam2ta -> Local, atac.trim_adapter -> Local, atac.pool_ta -> Local, atac.xcor -> Local, atac.macs2_pooled -> Local
-[2018-09-01 14:36:07,96] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [preemptible, disks, cpu, time, memory] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:07,97] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:07,97] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:07,97] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:07,97] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:07,97] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:07,97] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,01] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,01] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,02] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,08] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,08] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,08] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,17] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,20] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,27] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,27] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,27] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,29] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,29] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,29] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,31] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,31] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,31] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,33] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:08,33] [[38;5;220mwarn[0m] Local [[38;5;2m4442bab3[0m]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
-[2018-09-01 14:36:10,76] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Starting atac.read_genome_tsv
-[2018-09-01 14:36:10,76] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Condition met: '!align_only && !true_rep_only'. Running conditional section
-[2018-09-01 14:36:10,77] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Condition met: '!disable_xcor'. Running conditional section
-[2018-09-01 14:36:10,77] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Condition met: 'enable_idr'. Running conditional section
-[2018-09-01 14:36:10,81] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Condition met: '!align_only && !true_rep_only && enable_idr'. Running conditional section
-[2018-09-01 14:36:10,81] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Condition met: '!true_rep_only'. Running conditional section
-[2018-09-01 14:36:10,81] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Condition met: 'enable_idr'. Running conditional section
-[2018-09-01 14:36:12,04] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.read_genome_tsv:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:36:13,55] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.read_genome_tsv:NA:1]: [38;5;5mcat /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-read_genome_tsv/inputs/1482462591/Rnor6.tsv[0m
-[2018-09-01 14:36:13,59] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.read_genome_tsv:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-read_genome_tsv/execution/script
-[2018-09-01 14:36:15,36] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Starting atac.trim_adapter
-[2018-09-01 14:36:15,83] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.trim_adapter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 14:36:15,87] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.trim_adapter:0:1]: [38;5;5mpython $(which encode_trim_adapter.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-trim_adapter/shard-0/execution/write_tsv_652212ca5cd376013c09cce58a837f84.tmp \
-	--adapters /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-trim_adapter/shard-0/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
-	--paired-end \
-	--auto-detect-adapter \
-	--min-trim-len 5 \
-	--err-rate 0.1 \
-	--nth 1[0m
-[2018-09-01 14:36:15,88] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.trim_adapter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-trim_adapter/shard-0/execution/script
-[2018-09-01 14:36:18,28] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.trim_adapter:0:1]: job id: 38646
-[2018-09-01 14:36:18,28] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.read_genome_tsv:NA:1]: job id: 38507
-[2018-09-01 14:36:18,29] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.read_genome_tsv:NA:1]: Status change from - to Done
-[2018-09-01 14:36:18,29] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.trim_adapter:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 15:19:24,73] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.trim_adapter:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 15:19:26,07] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Starting atac.bowtie2
-[2018-09-01 15:19:26,83] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bowtie2:0:1]: Unrecognized runtime attribute keys: preemptible, disks, cpu, time, memory
-[2018-09-01 15:19:26,84] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bowtie2:0:1]: [38;5;5mpython $(which encode_bowtie2.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-bowtie2/shard-0/inputs/1039591591/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.tar \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-bowtie2/shard-0/inputs/-845143004/merge_fastqs_R1_20180815-9-Heart-002-piece_S9_L001_R1_001.trim.merged.fastq.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-bowtie2/shard-0/inputs/-845143004/merge_fastqs_R2_20180815-9-Heart-002-piece_S9_L001_R2_001.trim.merged.fastq.gz \
-	--paired-end \
-	--multimapping 4 \
-	 \
-	--nth 2[0m
-[2018-09-01 15:19:26,86] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bowtie2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-bowtie2/shard-0/execution/script
-[2018-09-01 15:19:28,26] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bowtie2:0:1]: job id: 43699
-[2018-09-01 15:19:28,26] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bowtie2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 19:59:30,14] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bowtie2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 19:59:35,41] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Starting atac.filter
-[2018-09-01 19:59:35,83] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.filter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 19:59:35,85] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.filter:0:1]: [38;5;5mpython $(which encode_filter.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-filter/shard-0/inputs/-1950690299/20180815-9-Heart-002-piece_S9_L001_R1_001.trim.merged.bam \
-	--paired-end \
-	--multimapping 4 \
-	--dup-marker picard \
-	--mapq-thresh 30 \
-	 \
-	--nth 1
-# ugly part to deal with optional outputs with Google JES backend
-
-touch null[0m
-[2018-09-01 19:59:35,87] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.filter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-filter/shard-0/execution/script
-[2018-09-01 19:59:38,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.filter:0:1]: job id: 55261
-[2018-09-01 19:59:38,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.filter:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 21:23:58,60] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.filter:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 21:24:03,75] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Starting atac.bam2ta
-[2018-09-01 21:24:03,82] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bam2ta:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 21:24:03,85] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bam2ta:0:1]: [38;5;5mpython $(which encode_bam2ta.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-bam2ta/shard-0/inputs/1227475973/20180815-9-Heart-002-piece_S9_L001_R1_001.trim.merged.nodup.bam \
-	--paired-end \
-	 \
-	--regex-grep-v-ta 'chrM' \
-	--subsample 0 \[0m
-[2018-09-01 21:24:03,85] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bam2ta:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-bam2ta/shard-0/execution/script
-[2018-09-01 21:24:08,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bam2ta:0:1]: job id: 59999
-[2018-09-01 21:24:08,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bam2ta:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 21:35:08,02] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.bam2ta:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 21:35:11,85] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Condition NOT met: '!true_rep_only && length(tas_) > 1'. Bypassing conditional section
-[2018-09-01 21:35:11,85] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Condition NOT met: 'length(tas_) > 1'. Bypassing conditional section
-[2018-09-01 21:35:13,91] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Starting atac.spr, atac.macs2, atac.xcor
-[2018-09-01 21:35:14,82] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 21:35:14,82] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.xcor:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 21:35:14,82] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.spr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 21:35:14,83] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.xcor:0:1]: [38;5;5mpython $(which encode_xcor.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-xcor/shard-0/inputs/1436607519/20180815-9-Heart-002-piece_S9_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--paired-end \
-	--subsample 25000000 \
-	--speak=0 \
-	--nth 2[0m
-[2018-09-01 21:35:14,83] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.spr:0:1]: [38;5;5mpython $(which encode_spr.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-spr/shard-0/inputs/1436607519/20180815-9-Heart-002-piece_S9_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--paired-end[0m
-[2018-09-01 21:35:14,84] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2/shard-0/inputs/1436607519/20180815-9-Heart-002-piece_S9_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	--make-signal \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-
-touch null[0m
-[2018-09-01 21:35:14,84] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.xcor:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-xcor/shard-0/execution/script
-[2018-09-01 21:35:14,84] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.spr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-spr/shard-0/execution/script
-[2018-09-01 21:35:14,85] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2/shard-0/execution/script
-[2018-09-01 21:35:18,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.spr:0:1]: job id: 60978
-[2018-09-01 21:35:18,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.xcor:0:1]: job id: 60976
-[2018-09-01 21:35:18,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2:0:1]: job id: 60993
-[2018-09-01 21:35:18,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 21:35:18,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.spr:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 21:35:18,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.xcor:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 21:36:28,33] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.spr:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 21:36:29,40] [info] WorkflowExecutionActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 [[38;5;2m4442bab3[0m]: Starting atac.macs2_pr1, atac.macs2_pr2
-[2018-09-01 21:36:29,82] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr1:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 21:36:29,82] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
-[2018-09-01 21:36:29,83] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr1:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2_pr1/shard-0/inputs/-1736209639/20180815-9-Heart-002-piece_S9_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2_pr1/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	 \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2_pr1/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-touch null.pval.signal.bigwig null.fc.signal.bigwig
-touch null[0m
-[2018-09-01 21:36:29,83] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
-	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2_pr2/shard-0/inputs/595136354/20180815-9-Heart-002-piece_S9_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz \
-	--gensz 2870184193 \
-	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2_pr2/shard-0/inputs/1159650167/Rnor6.chrom.sizes \
-	--cap-num-peak 300000 \
-	--pval-thresh 0.01 \
-	--smooth-win 73 \
-	 \
-	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2_pr2/shard-0/inputs/1159650167/null
-
-# ugly part to deal with optional outputs with Google JES backend
-touch null.pval.signal.bigwig null.fc.signal.bigwig
-touch null[0m
-[2018-09-01 21:36:29,84] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr1:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2_pr1/shard-0/execution/script
-[2018-09-01 21:36:29,84] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/4442bab3-0535-4146-b6b7-5f1d529f2e64/call-macs2_pr2/shard-0/execution/script
-[2018-09-01 21:36:33,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr1:0:1]: job id: 61131
-[2018-09-01 21:36:33,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr2:0:1]: job id: 61135
-[2018-09-01 21:36:33,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr1:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 21:36:33,25] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr2:0:1]: Status change from - to WaitingForReturnCodeFile
-[2018-09-01 21:41:14,54] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 21:42:10,35] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2_pr1:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 21:46:50,11] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.xcor:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 22:02:37,16] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m4442bab3[0matac.macs2:0:1]: Status change from WaitingForReturnCodeFile to Done
-[2018-09-01 22:02:38,20] [[38;5;1merror[0m] WorkflowManagerActor Workflow 4442bab3-0535-4146-b6b7-5f1d529f2e64 failed (during ExecutingWorkflowState): cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2_pr2.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2_pr2.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2_pr1.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2_pr1.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-cromwell.backend.standard.StandardAsyncExecutionActor$$anon$2: Failed to evaluate job outputs:
-Bad output 'macs2.bfilt_npeak_bb': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-Bad output 'macs2.frip_qc': Failed to find index Success(WomInteger(0)) on array:
-
-Success([])
-
-0
-	at cromwell.backend.standard.StandardAsyncExecutionActor.$anonfun$handleExecutionSuccess$1(StandardAsyncExecutionActor.scala:839)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-[2018-09-01 22:02:38,20] [info] WorkflowManagerActor WorkflowActor-4442bab3-0535-4146-b6b7-5f1d529f2e64 is in a terminal state: WorkflowFailedState
-[2018-09-01 22:02:41,07] [info] SingleWorkflowRunnerActor workflow finished with status 'Failed'.
-[2018-09-01 22:02:43,26] [info] Workflow polling stopped
-[2018-09-01 22:02:43,28] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
-[2018-09-01 22:02:43,29] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
-[2018-09-01 22:02:43,29] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
-[2018-09-01 22:02:43,29] [info] Aborting all running workflows.
-[2018-09-01 22:02:43,29] [info] JobExecutionTokenDispenser stopped
-[2018-09-01 22:02:43,29] [info] WorkflowStoreActor stopped
-[2018-09-01 22:02:43,29] [info] WorkflowLogCopyRouter stopped
-[2018-09-01 22:02:43,29] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
-[2018-09-01 22:02:43,29] [info] WorkflowManagerActor stopped
-[2018-09-01 22:02:43,29] [info] Connection pools shut down
-[2018-09-01 22:02:43,29] [info] WorkflowManagerActor All workflows finished
-[2018-09-01 22:02:43,29] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
-[2018-09-01 22:02:43,29] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
-[2018-09-01 22:02:43,29] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
-[2018-09-01 22:02:43,29] [info] SubWorkflowStoreActor stopped
-[2018-09-01 22:02:43,29] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
-[2018-09-01 22:02:43,29] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
-[2018-09-01 22:02:43,29] [info] Shutting down IoProxy - Timeout = 1800 seconds
-[2018-09-01 22:02:43,30] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
-[2018-09-01 22:02:43,30] [info] JobStoreActor stopped
-[2018-09-01 22:02:43,30] [info] WriteMetadataActor Shutting down: 0 queued messages to process
-[2018-09-01 22:02:43,30] [info] KvWriteActor Shutting down: 0 queued messages to process
-[2018-09-01 22:02:43,30] [info] CallCacheWriteActor stopped
-[2018-09-01 22:02:43,30] [info] DockerHashActor stopped
-[2018-09-01 22:02:43,30] [info] IoProxy stopped
-[2018-09-01 22:02:43,30] [info] ServiceRegistryActor stopped
-[2018-09-01 22:02:43,31] [info] Database closed
-[2018-09-01 22:02:43,31] [info] Stream materializer shut down
-[2018-09-01 22:02:43,36] [info] Automatic shutdown of the async connection
-[2018-09-01 22:02:43,36] [info] Gracefully shutdown sentry threads.
-[2018-09-01 22:02:43,36] [info] Shutdown finished.
-Workflow 4442bab3-0535-4146-b6b7-5f1d529f2e64 transitioned to state Failed
+[2018-09-02 11:12:42,20] [info] WorkflowManagerActor WorkflowActor-031ecef0-f318-4008-b839-6a65ad87b92e is in a terminal state: WorkflowFailedState
+[2018-09-02 11:12:50,68] [info] SingleWorkflowRunnerActor workflow finished with status 'Failed'.
+[2018-09-02 11:12:50,78] [info] Workflow polling stopped
+[2018-09-02 11:12:50,79] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
+[2018-09-02 11:12:50,80] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
+[2018-09-02 11:12:50,80] [info] Aborting all running workflows.
+[2018-09-02 11:12:50,80] [info] WorkflowStoreActor stopped
+[2018-09-02 11:12:50,80] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
+[2018-09-02 11:12:50,81] [info] JobExecutionTokenDispenser stopped
+[2018-09-02 11:12:50,82] [info] WorkflowLogCopyRouter stopped
+[2018-09-02 11:12:50,82] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
+[2018-09-02 11:12:50,82] [info] WorkflowManagerActor All workflows finished
+[2018-09-02 11:12:50,82] [info] WorkflowManagerActor stopped
+[2018-09-02 11:12:50,82] [info] Connection pools shut down
+[2018-09-02 11:12:50,82] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
+[2018-09-02 11:12:50,82] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
+[2018-09-02 11:12:50,82] [info] SubWorkflowStoreActor stopped
+[2018-09-02 11:12:50,82] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
+[2018-09-02 11:12:50,82] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
+[2018-09-02 11:12:50,82] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
+[2018-09-02 11:12:50,82] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
+[2018-09-02 11:12:50,82] [info] JobStoreActor stopped
+[2018-09-02 11:12:50,82] [info] CallCacheWriteActor stopped
+[2018-09-02 11:12:50,82] [info] WriteMetadataActor Shutting down: 0 queued messages to process
+[2018-09-02 11:12:50,82] [info] KvWriteActor Shutting down: 0 queued messages to process
+[2018-09-02 11:12:50,82] [info] Shutting down IoProxy - Timeout = 1800 seconds
+[2018-09-02 11:12:50,82] [info] DockerHashActor stopped
+[2018-09-02 11:12:50,82] [info] IoProxy stopped
+[2018-09-02 11:12:50,82] [info] ServiceRegistryActor stopped
+[2018-09-02 11:12:50,84] [info] Database closed
+[2018-09-02 11:12:50,84] [info] Stream materializer shut down
+[2018-09-02 11:12:50,88] [info] Automatic shutdown of the async connection
+[2018-09-02 11:12:50,88] [info] Gracefully shutdown sentry threads.
+[2018-09-02 11:12:50,89] [info] Shutdown finished.
+Workflow 031ecef0-f318-4008-b839-6a65ad87b92e transitioned to state Failed
