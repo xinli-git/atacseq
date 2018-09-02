@@ -1,0 +1,40 @@
+{
+"atac.qc_report.name" : "20180725-6-Liver-002-powder_S6",
+"atac.qc_report.desc" : "ATAC-seq on motrpac",
+"atac.pipeline_type" : "atac",
+"atac.genome_tsv" : "/users/xli6//projects/atacseq/atac_durga/reference/Rnor/Rnor6.tsv",
+
+
+    "atac.paired_end" : true,
+    "atac.multimapping" : 4,
+
+    "atac.trim_adapter.auto_detect_adapter" : true,
+    "atac.trim_adapter.cpu" : 1,
+
+    "atac.bowtie2.cpu" : 2,
+    "atac.bowtie2.mem_mb" : 16000,
+
+    "atac.filter.cpu" : 1,
+    "atac.filter.mem_mb" : 12000,
+
+    "atac.macs2_mem_mb" : 16000,
+
+    "atac.smooth_win" : 73,
+    "atac.enable_idr" : true,
+    "atac.idr_thresh" : 0.05,
+
+
+
+"atac.fastqs_rep1_R1" : [
+"/users/xli6//projects/atacseq/fastq/fastq_durga/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L001_R1_001.fastq.gz"
+,"/users/xli6//projects/atacseq/fastq/fastq_durga/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L002_R1_001.fastq.gz"
+,"/users/xli6//projects/atacseq/fastq/fastq_durga/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L003_R1_001.fastq.gz"
+,"/users/xli6//projects/atacseq/fastq/fastq_durga/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L004_R1_001.fastq.gz"
+],
+"atac.fastqs_rep1_R2" : [
+"/users/xli6//projects/atacseq/fastq/fastq_durga/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L001_R2_001.fastq.gz"
+,"/users/xli6//projects/atacseq/fastq/fastq_durga/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L002_R2_001.fastq.gz"
+,"/users/xli6//projects/atacseq/fastq/fastq_durga/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L003_R2_001.fastq.gz"
+,"/users/xli6//projects/atacseq/fastq/fastq_durga/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L004_R2_001.fastq.gz"
+]
+}

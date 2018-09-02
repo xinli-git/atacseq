@@ -1,0 +1,15 @@
+
+# install conda
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+
+# install pipeline using conda
+bash installers/uninstall_dependencies.sh  # to remove any existing pipeline env
+bash installers/install_dependencies.sh
+
+
+# download dwl intepreter
+wget https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
+chmod +rx cromwell-34.jar
+
+

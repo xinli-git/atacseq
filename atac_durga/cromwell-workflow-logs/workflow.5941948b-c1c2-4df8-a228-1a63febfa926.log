@@ -1,0 +1,66 @@
+2018-09-01 14:35:47,831 INFO  - MaterializeWorkflowDescriptorActor [UUID(5941948b)]: Parsing workflow as WDL draft-2
+2018-09-01 14:36:13,829 INFO  - MaterializeWorkflowDescriptorActor [UUID(5941948b)]: Call-to-Backend assignments: atac.bowtie2 -> Local, atac.macs2_ppr1 -> Local, atac.bam2ta -> Local, atac.macs2_pooled -> Local, atac.overlap -> Local, atac.reproducibility_overlap -> Local, atac.pool_ta_pr2 -> Local, atac.ataqc -> Local, atac.overlap_ppr -> Local, atac.overlap_pr -> Local, atac.macs2_pr1 -> Local, atac.spr -> Local, atac.trim_adapter -> Local, atac.xcor -> Local, atac.macs2 -> Local, atac.idr_ppr -> Local, atac.qc_report -> Local, atac.filter -> Local, atac.macs2_ppr2 -> Local, atac.read_genome_tsv -> Local, atac.idr_pr -> Local, atac.pool_ta -> Local, atac.reproducibility_idr -> Local, atac.idr -> Local, atac.macs2_pr2 -> Local, atac.pool_ta_pr1 -> Local
+2018-09-01 14:36:14,017 WARN  - Local [UUID(5941948b)]: Key/s [preemptible, disks, cpu, time, memory] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,018 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,019 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,019 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,019 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,019 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,019 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,019 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,019 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,019 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,020 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,020 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,020 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,020 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,020 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,020 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,020 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,036 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,036 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,036 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,037 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,037 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,037 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,037 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,037 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:14,037 WARN  - Local [UUID(5941948b)]: Key/s [cpu, memory, time, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-01 14:36:16,823 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Starting atac.read_genome_tsv
+2018-09-01 14:36:16,823 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Condition met: 'enable_idr'. Running conditional section
+2018-09-01 14:36:16,826 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Condition met: '!align_only && !true_rep_only && enable_idr'. Running conditional section
+2018-09-01 14:36:16,827 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Condition met: '!disable_xcor'. Running conditional section
+2018-09-01 14:36:16,849 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Condition met: 'enable_idr'. Running conditional section
+2018-09-01 14:36:16,849 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Condition met: '!align_only && !true_rep_only'. Running conditional section
+2018-09-01 14:36:16,849 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Condition met: '!true_rep_only'. Running conditional section
+2018-09-01 14:36:17,854 WARN  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.read_genome_tsv:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+2018-09-01 14:36:19,324 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.read_genome_tsv:NA:1]: `cat /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-read_genome_tsv/inputs/1482462591/Rnor6.tsv`
+2018-09-01 14:36:19,443 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.read_genome_tsv:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-read_genome_tsv/execution/script
+2018-09-01 14:36:20,742 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.read_genome_tsv:NA:1]: job id: 38841
+2018-09-01 14:36:20,747 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.read_genome_tsv:NA:1]: Status change from - to Done
+2018-09-01 14:36:22,044 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Starting atac.trim_adapter
+2018-09-01 14:36:22,554 WARN  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.trim_adapter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+2018-09-01 14:36:22,584 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.trim_adapter:0:1]: `python $(which encode_trim_adapter.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-trim_adapter/shard-0/execution/write_tsv_55d33b24a8035eeef65ddc3f5aa41e47.tmp \
+	--adapters /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-trim_adapter/shard-0/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
+	--paired-end \
+	--auto-detect-adapter \
+	--min-trim-len 5 \
+	--err-rate 0.1 \
+	--nth 1`
+2018-09-01 14:36:22,588 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.trim_adapter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-trim_adapter/shard-0/execution/script
+2018-09-01 14:36:25,657 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.trim_adapter:0:1]: job id: 38963
+2018-09-01 14:36:25,658 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.trim_adapter:0:1]: Status change from - to WaitingForReturnCodeFile
+2018-09-01 15:18:21,064 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.trim_adapter:0:1]: Status change from WaitingForReturnCodeFile to Done
+2018-09-01 15:18:22,464 INFO  - WorkflowExecutionActor-5941948b-c1c2-4df8-a228-1a63febfa926 [UUID(5941948b)]: Starting atac.bowtie2
+2018-09-01 15:18:22,550 WARN  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.bowtie2:0:1]: Unrecognized runtime attribute keys: preemptible, disks, cpu, time, memory
+2018-09-01 15:18:22,566 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.bowtie2:0:1]: `python $(which encode_bowtie2.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-bowtie2/shard-0/inputs/1039591591/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.tar \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-bowtie2/shard-0/inputs/218308872/merge_fastqs_R1_20180815-13-Adipose-002-piece_S13_L001_R1_001.trim.merged.fastq.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-bowtie2/shard-0/inputs/218308872/merge_fastqs_R2_20180815-13-Adipose-002-piece_S13_L001_R2_001.trim.merged.fastq.gz \
+	--paired-end \
+	--multimapping 4 \
+	 \
+	--nth 2`
+2018-09-01 15:18:22,580 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.bowtie2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/5941948b-c1c2-4df8-a228-1a63febfa926/call-bowtie2/shard-0/execution/script
+2018-09-01 15:18:25,658 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.bowtie2:0:1]: job id: 43609
+2018-09-01 15:18:25,659 INFO  - BackgroundConfigAsyncJobExecutionActor [UUID(5941948b)atac.bowtie2:0:1]: Status change from - to WaitingForReturnCodeFile
