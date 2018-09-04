@@ -9,6 +9,7 @@ genome_fa=~/projects/atacseq/atac/reference/Rattus_norvegicus.Rnor_6.0.dna.tople
 genome_url=ftp://ftp.ensembl.org/pub/release-93/fasta/rattus_norvegicus/dna/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.gz
 output_dir=~/projects/atacseq/atac/reference/Rnor/
 
+# must include blacklist.bed, otherwise pipeline stops
 
 bash ${script_atac} "YOUR_OWN_GENOME" ${output_dir}
 
