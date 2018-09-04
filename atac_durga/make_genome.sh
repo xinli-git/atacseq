@@ -8,6 +8,7 @@ script_atac=~/tools/atac-seq-pipeline/conda/install_genome_data.sh
 genome_fa=~/projects/atacseq/atac/reference/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.gz
 genome_url=ftp://ftp.ensembl.org/pub/release-93/fasta/rattus_norvegicus/dna/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.gz
 # must use genome with chr contigs
+# must provide blacklist
 genome_url=http://hgdownload.soe.ucsc.edu/goldenPath/rn6/bigZips/rn6.fa.gz
 output_dir=~/projects/atacseq/atac_durga/reference/Rnor/
 output_dir=~/projects/atacseq/atac_durga/reference/rn6
