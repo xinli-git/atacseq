@@ -16,3 +16,11 @@ output_dir=~/projects/atacseq/atac_durga/reference/rn6
 # bash ${script_atac} "Rnor6" ${output_dir}
 bash ${script_atac} "rn6" ${output_dir}
 
+
+# add these lines to script_atac
+# elif [[ $GENOME == "rn6" ]]; then
+#  REF_FA="http://hgdownload.soe.ucsc.edu/goldenPath/rn6/bigZips/rn6.fa.gz"
+#  BLACKLIST="https://xinli-git.github.io/atacseq/blacklist/dummy/rn6_blacklist.bed.gz"
+
+
+
