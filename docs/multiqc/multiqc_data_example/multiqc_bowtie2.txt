@@ -1,0 +1,5 @@
+Sample	overall_alignment_rate	paired_aligned_mate_multi_halved	paired_aligned_none	paired_aligned_mate_multi	paired_aligned_discord_one	paired_aligned_mate_one	paired_total	paired_aligned_mate_none_halved	paired_aligned_multi	paired_aligned_one	total_reads	paired_aligned_mate_one_halved	paired_aligned_mate_none
+ENCFF341MYG.subsampled.400.trim	99.23	4931.5	42750	9863	34603	1137	345583	2647.0	114267	188566	345583	568.5	5294
+ENCFF641SFZ.subsampled.400.trim	99.65	6575.0	50286	13150	41417	1590	424427	1499.0	151603	222538	424427	795.0	2998
+merge_fastqs_R1_ENCFF341MYG.subsampled.400.trim	99.23						345583				345583		
+merge_fastqs_R1_ENCFF641SFZ.subsampled.400.trim	99.65						424427				424427		

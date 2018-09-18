@@ -29,3 +29,4 @@
 
 ## example qc report
 * https://xinli-git.github.io/atacseq/example/call-qc_report/execution/qc.html
+* https://xinli-git.github.io/atacseq/multiqc/multiqc_report_example.html

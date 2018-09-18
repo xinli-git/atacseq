@@ -1,0 +1,205 @@
+[2018-09-17 22:00:53,580] multiqc                                            [DEBUG  ]  No MultiQC config found: /usr/local/lib/python2.7/dist-packages/multiqc_config.yaml
+[2018-09-17 22:00:53,581] multiqc                                            [DEBUG  ]  No MultiQC config found: /users/xli6/.multiqc_config.yaml
+[2018-09-17 22:00:53,581] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2018-09-17 22:00:53,581] multiqc                                            [DEBUG  ]  Command used: /usr/local/bin/multiqc 038f4834-6c5c-4559-bd01-bee5a842052b/
+[2018-09-17 22:00:54,419] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.6
+[2018-09-17 22:00:54,419] multiqc                                            [INFO   ]  This is MultiQC v1.6
+[2018-09-17 22:00:54,419] multiqc                                            [DEBUG  ]  Command     : /usr/local/bin/multiqc 038f4834-6c5c-4559-bd01-bee5a842052b/
+[2018-09-17 22:00:54,420] multiqc                                            [DEBUG  ]  Working dir : /srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac
+[2018-09-17 22:00:54,420] multiqc                                            [INFO   ]  Template    : default
+[2018-09-17 22:00:54,420] multiqc                                            [INFO   ]  Searching '038f4834-6c5c-4559-bd01-bee5a842052b/'
+[2018-09-17 22:00:54,420] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, conpair, peddy, methylQA, qualimap, preseq, quast, qorts, rna_seqc, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, homer, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, dedup, picard, prokka, samblaster, samtools, bamtools, jellyfish, vcftools, longranger, bbmap, bismark, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, kat, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, trimmomatic, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, clusterflow, bcl2fastq, interop
+[2018-09-17 22:00:54,421] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpuYPxtE
+[2018-09-17 22:00:55,877] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.tn5.no_chrM.R1.25M.cc.plot.pdf
+[2018-09-17 22:00:55,932] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.tn5.no_chrM.R1.25M.cc.plot.pdf
+[2018-09-17 22:00:55,953] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.tn5.no_chrM.R1.25M.cc.plot.pdf
+[2018-09-17 22:00:56,011] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.tn5.no_chrM.R1.25M.cc.plot.pdf
+[2018-09-17 22:00:56,141] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ppr.idr0.05.unthresholded-peaks.txt.gz
+[2018-09-17 22:00:56,167] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ppr.idr0.05.unthresholded-peaks.txt.gz
+[2018-09-17 22:00:56,301] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: rep1-rep2.idr0.05.unthresholded-peaks.txt.gz
+[2018-09-17 22:00:56,337] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: rep1-rep2.idr0.05.unthresholded-peaks.txt.gz
+[2018-09-17 22:00:56,412] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.bam
+[2018-09-17 22:00:56,412] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.bam.bai
+[2018-09-17 22:00:56,412] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: hg38_dnase_avg_fseq_signal_formatted.txt.gz
+[2018-09-17 22:00:56,429] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.bam
+[2018-09-17 22:00:56,429] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.bam.bai
+[2018-09-17 22:01:00,954] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.inserts.hist_graph.pdf
+[2018-09-17 22:01:01,044] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged_gcPlot.pdf
+[2018-09-17 22:01:01,049] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged_qc.html
+[2018-09-17 22:01:01,079] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged_qc.html
+[2018-09-17 22:01:01,106] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.bam.bai
+[2018-09-17 22:01:01,106] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.bam
+[2018-09-17 22:01:01,143] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.bam.bai
+[2018-09-17 22:01:01,143] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.bam
+[2018-09-17 22:01:01,143] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: hg38_dnase_avg_fseq_signal_formatted.txt.gz
+[2018-09-17 22:01:01,171] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.inserts.hist_graph.pdf
+[2018-09-17 22:01:05,797] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged_gcPlot.pdf
+[2018-09-17 22:01:05,989] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged_qc.html
+[2018-09-17 22:01:06,040] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged_qc.html
+[2018-09-17 22:01:06,228] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,228] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF106QGY.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,228] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF368TYI.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,228] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF248EJF.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,234] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R2_ENCFF248EJF.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,300] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R1_ENCFF341MYG.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,306] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R2_ENCFF248EJF.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,307] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R1_ENCFF341MYG.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,307] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF007USV.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,307] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF734PEQ.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,307] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF886FSC.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,307] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF031ARQ.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,307] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF590SYZ.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,307] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF573UXK.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,307] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF751XTV.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,308] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF859BDM.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,308] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF366DFI.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,308] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF193RRC.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,308] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,308] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF927LSG.subsampled.400.fastq.gz
+[2018-09-17 22:01:06,314] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R2_ENCFF031ARQ.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,410] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R1_ENCFF641SFZ.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,416] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R2_ENCFF031ARQ.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,416] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R1_ENCFF641SFZ.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,764] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R2_ENCFF248EJF.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,765] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R1_ENCFF341MYG.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,784] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.bam
+[2018-09-17 22:01:06,841] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.bam.bai
+[2018-09-17 22:01:06,847] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.bam
+[2018-09-17 22:01:06,875] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.bam.bai
+[2018-09-17 22:01:06,875] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R2_ENCFF031ARQ.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,876] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: merge_fastqs_R1_ENCFF641SFZ.subsampled.400.trim.merged.fastq.gz
+[2018-09-17 22:01:06,913] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.bam.bai
+[2018-09-17 22:01:06,991] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.bam
+[2018-09-17 22:01:07,010] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.bam
+[2018-09-17 22:01:07,048] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.bam.bai
+[2018-09-17 22:01:07,667] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qc.html
+[2018-09-17 22:01:07,730] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qc.html
+[2018-09-17 22:01:07,730] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.bam
+[2018-09-17 22:01:07,748] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.bam
+[2018-09-17 22:01:07,773] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.bam.bai
+[2018-09-17 22:01:07,829] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.filt.bam.bai
+[2018-09-17 22:01:07,854] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.bam
+[2018-09-17 22:01:07,877] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.bam.bai
+[2018-09-17 22:01:07,878] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.filt.bam.bai
+[2018-09-17 22:01:07,878] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.bam
+[2018-09-17 22:01:07,930] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.filt.bam.bai
+[2018-09-17 22:01:07,943] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.bam.bai
+[2018-09-17 22:01:07,967] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.bam
+[2018-09-17 22:01:08,016] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.bam
+[2018-09-17 22:01:08,040] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.filt.bam.bai
+[2018-09-17 22:01:08,040] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.bam.bai
+[2018-09-17 22:01:08,626] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: rep1-pr.idr0.05.unthresholded-peaks.txt.gz
+[2018-09-17 22:01:08,652] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: rep1-pr.idr0.05.unthresholded-peaks.txt.gz
+[2018-09-17 22:01:08,777] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: rep2-pr.idr0.05.unthresholded-peaks.txt.gz
+[2018-09-17 22:01:08,795] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: rep2-pr.idr0.05.unthresholded-peaks.txt.gz
+[2018-09-17 22:01:08,823] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF341MYG.subsampled.400.trim.merged.nodup.bam
+[2018-09-17 22:01:08,862] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: ENCFF641SFZ.subsampled.400.trim.merged.nodup.bam
+[2018-09-17 22:01:09,780] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2018-09-17 22:01:09,786] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2018-09-17 22:01:09,791] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2018-09-17 22:01:09,797] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2018-09-17 22:01:09,803] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2018-09-17 22:01:09,906] multiqc.modules.preseq.preseq                      [INFO   ]  Found 2 reports
+[2018-09-17 22:01:10,040] multiqc                                            [DEBUG  ]  No samples found: quast
+[2018-09-17 22:01:10,045] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2018-09-17 22:01:10,051] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2018-09-17 22:01:10,056] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2018-09-17 22:01:10,064] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2018-09-17 22:01:10,069] multiqc                                            [DEBUG  ]  No samples found: busco
+[2018-09-17 22:01:10,075] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2018-09-17 22:01:10,080] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2018-09-17 22:01:10,086] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2018-09-17 22:01:10,092] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2018-09-17 22:01:10,098] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2018-09-17 22:01:10,103] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2018-09-17 22:01:10,109] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2018-09-17 22:01:10,114] multiqc                                            [DEBUG  ]  No samples found: happy
+[2018-09-17 22:01:10,120] multiqc                                            [DEBUG  ]  No samples found: homer
+[2018-09-17 22:01:10,126] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2018-09-17 22:01:10,131] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2018-09-17 22:01:10,136] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2018-09-17 22:01:10,143] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2018-09-17 22:01:10,148] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2018-09-17 22:01:10,154] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2018-09-17 22:01:10,159] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2018-09-17 22:01:10,165] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2018-09-17 22:01:10,197] multiqc.modules.picard.picard                      [INFO   ]  Found 2 GcBiasMetrics reports
+[2018-09-17 22:01:10,242] multiqc.modules.picard.picard                      [INFO   ]  Found 2 InsertSizeMetrics reports
+[2018-09-17 22:01:10,244] multiqc.modules.picard.MarkDuplicates              [DEBUG  ]  Duplicate sample name found in ENCFF341MYG.subsampled.400.trim.merged.picardcomplexity.qc! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,245] multiqc.modules.picard.MarkDuplicates              [DEBUG  ]  Duplicate sample name found in ENCFF641SFZ.subsampled.400.trim.merged.picardcomplexity.qc! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,246] multiqc.modules.picard.MarkDuplicates              [DEBUG  ]  Duplicate sample name found in ENCFF641SFZ.subsampled.400.trim.merged.dup.qc! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,247] multiqc.modules.picard.MarkDuplicates              [DEBUG  ]  Duplicate sample name found in ENCFF341MYG.subsampled.400.trim.merged.dup.qc! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,248] multiqc.modules.picard.MarkDuplicates              [DEBUG  ]  Duplicate sample name found in ENCFF341MYG.subsampled.400.trim.merged.dup.qc! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,249] multiqc.modules.picard.MarkDuplicates              [DEBUG  ]  Duplicate sample name found in ENCFF341MYG.subsampled.400.trim.merged.dup.qc! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,250] multiqc.modules.picard.MarkDuplicates              [DEBUG  ]  Duplicate sample name found in ENCFF641SFZ.subsampled.400.trim.merged.dup.qc! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,251] multiqc.modules.picard.MarkDuplicates              [DEBUG  ]  Duplicate sample name found in ENCFF641SFZ.subsampled.400.trim.merged.dup.qc! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,256] multiqc.modules.picard.picard                      [INFO   ]  Found 2 MarkDuplicates reports
+[2018-09-17 22:01:10,262] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2018-09-17 22:01:10,267] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2018-09-17 22:01:10,278] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,280] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,280] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,281] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,282] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,283] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,283] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,284] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,285] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,286] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,286] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,287] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,288] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,289] multiqc.modules.samtools.flagstat                  [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,292] multiqc.modules.samtools.samtools                  [INFO   ]  Found 2 flagstat reports
+[2018-09-17 22:01:10,299] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2018-09-17 22:01:10,304] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2018-09-17 22:01:10,311] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2018-09-17 22:01:10,316] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2018-09-17 22:01:10,325] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2018-09-17 22:01:10,331] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2018-09-17 22:01:10,336] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2018-09-17 22:01:10,341] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2018-09-17 22:01:10,347] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2018-09-17 22:01:10,352] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2018-09-17 22:01:10,357] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2018-09-17 22:01:10,364] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2018-09-17 22:01:10,370] multiqc                                            [DEBUG  ]  No samples found: star
+[2018-09-17 22:01:10,376] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2018-09-17 22:01:10,381] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2018-09-17 22:01:10,391] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,392] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Found a bowtie2 command, updating sample name to 'merge_fastqs_R1_ENCFF341MYG.subsampled.400.trim'
+[2018-09-17 22:01:10,394] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF341MYG.subsampled.400.trim
+[2018-09-17 22:01:10,395] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Found a bowtie2 command, updating sample name to 'merge_fastqs_R1_ENCFF641SFZ.subsampled.400.trim'
+[2018-09-17 22:01:10,397] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,398] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Duplicate sample name found! Overwriting: ENCFF641SFZ.subsampled.400.trim
+[2018-09-17 22:01:10,398] multiqc.modules.bowtie2.bowtie2                    [INFO   ]  Found 4 reports
+[2018-09-17 22:01:10,408] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2018-09-17 22:01:10,414] multiqc                                            [DEBUG  ]  No samples found: kat
+[2018-09-17 22:01:10,419] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2018-09-17 22:01:10,425] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2018-09-17 22:01:10,430] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2018-09-17 22:01:10,441] multiqc                                            [DEBUG  ]  No samples found: cutadapt
+[2018-09-17 22:01:10,447] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2018-09-17 22:01:10,452] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2018-09-17 22:01:10,457] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2018-09-17 22:01:10,463] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2018-09-17 22:01:10,468] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2018-09-17 22:01:10,473] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2018-09-17 22:01:10,479] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2018-09-17 22:01:10,485] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2018-09-17 22:01:10,491] multiqc                                            [DEBUG  ]  No samples found: fastqc
+[2018-09-17 22:01:10,496] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2018-09-17 22:01:10,502] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2018-09-17 22:01:10,507] multiqc                                            [DEBUG  ]  No samples found: interop
+[2018-09-17 22:01:10,514] multiqc                                            [INFO   ]  Compressing plot data
+[2018-09-17 22:01:10,927] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2018-09-17 22:01:10,927] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2018-09-17 22:01:10,927] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpuYPxtE/multiqc_data/multiqc_picard_insertSize.txt' to '/srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac/multiqc_data'
+[2018-09-17 22:01:10,927] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpuYPxtE/multiqc_data/multiqc_picard_dups.txt' to '/srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac/multiqc_data'
+[2018-09-17 22:01:10,928] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpuYPxtE/multiqc_data/multiqc_sources.txt' to '/srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac/multiqc_data'
+[2018-09-17 22:01:10,928] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpuYPxtE/multiqc_data/multiqc_samtools_flagstat.txt' to '/srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac/multiqc_data'
+[2018-09-17 22:01:10,928] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpuYPxtE/multiqc_data/multiqc_bowtie2.txt' to '/srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac/multiqc_data'
+[2018-09-17 22:01:10,928] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpuYPxtE/multiqc_data/multiqc_general_stats.txt' to '/srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac/multiqc_data'
+[2018-09-17 22:01:10,928] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpuYPxtE/multiqc_data/multiqc_picard_gcbias.txt' to '/srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac/multiqc_data'
+[2018-09-17 22:01:10,929] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpuYPxtE/multiqc_data/multiqc_data.json' to '/srv/scratch/xli6/tools/atac-seq-pipeline/cromwell-executions/atac/multiqc_data'
+[2018-09-17 22:01:11,112] multiqc                                            [INFO   ]  MultiQC complete

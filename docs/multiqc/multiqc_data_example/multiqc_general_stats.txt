@@ -1,0 +1,5 @@
+Sample	Picard_mqc-generalstats-picard-summed_median	Bowtie 2_mqc-generalstats-bowtie_2-overall_alignment_rate	Samtools Flagstat_mqc-generalstats-samtools_flagstat-mapped_passed	Picard_mqc-generalstats-picard-PERCENT_DUPLICATION	Picard_mqc-generalstats-picard-summed_mean
+ENCFF341MYG.subsampled.400.trim	139	99.23	440280	0.003088	180.641784
+ENCFF641SFZ.subsampled.400.trim	123	99.65	526902	0.004955	169.337976
+merge_fastqs_R1_ENCFF341MYG.subsampled.400.trim		99.23			
+merge_fastqs_R1_ENCFF641SFZ.subsampled.400.trim		99.65			
