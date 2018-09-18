@@ -1,0 +1,131 @@
+2018-09-18 11:37:51,196 INFO  - MaterializeWorkflowDescriptorActor [UUID(047591ee)]: Parsing workflow as WDL draft-2
+2018-09-18 11:38:08,673 INFO  - MaterializeWorkflowDescriptorActor [UUID(047591ee)]: Call-to-Backend assignments: atac.bowtie2 -> slurm, atac.xcor -> slurm, atac.overlap_pr -> slurm, atac.filter -> slurm, atac.bam2ta -> slurm, atac.overlap_ppr -> slurm, atac.macs2_pr2 -> slurm, atac.trim_adapter -> slurm, atac.read_genome_tsv -> slurm, atac.pool_ta_pr1 -> slurm, atac.macs2_pooled -> slurm, atac.macs2 -> slurm, atac.ataqc -> slurm, atac.idr_ppr -> slurm, atac.pool_ta -> slurm, atac.reproducibility_overlap -> slurm, atac.macs2_ppr1 -> slurm, atac.spr -> slurm, atac.macs2_ppr2 -> slurm, atac.macs2_pr1 -> slurm, atac.pool_ta_pr2 -> slurm, atac.overlap -> slurm, atac.idr -> slurm, atac.qc_report -> slurm, atac.reproducibility_idr -> slurm, atac.idr_pr -> slurm
+2018-09-18 11:38:08,854 WARN  - slurm [UUID(047591ee)]: Key/s [preemptible, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,855 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,857 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,857 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,857 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,858 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,858 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,858 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,858 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,859 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,859 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,859 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,859 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,859 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,860 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,860 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,860 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,861 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,862 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,864 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,864 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,865 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,865 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,865 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,866 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:08,866 WARN  - slurm [UUID(047591ee)]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+2018-09-18 11:38:11,168 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Starting atac.read_genome_tsv
+2018-09-18 11:38:11,169 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Condition met: '!true_rep_only'. Running conditional section
+2018-09-18 11:38:11,172 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Condition met: 'enable_idr'. Running conditional section
+2018-09-18 11:38:11,188 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Condition met: '!align_only && !true_rep_only'. Running conditional section
+2018-09-18 11:38:11,189 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Condition met: '!align_only && !true_rep_only && enable_idr'. Running conditional section
+2018-09-18 11:38:11,189 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Condition met: 'enable_idr'. Running conditional section
+2018-09-18 11:38:11,191 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Condition met: '!disable_xcor'. Running conditional section
+2018-09-18 11:38:12,129 WARN  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.read_genome_tsv:NA:1]: Unrecognized runtime attribute keys: disks
+2018-09-18 11:38:12,686 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.read_genome_tsv:NA:1]: `cat /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv/inputs/1727929217/rn6.tsv`
+2018-09-18 11:38:12,743 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.read_genome_tsv:NA:1]: executing: sbatch \
+--export=ALL \
+-J cromwell_047591ee_read_genome_tsv \
+-D /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv \
+-o /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv/execution/stdout \
+-e /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv/execution/stderr \
+-t 60 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=1 \
+--mem=4000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv/execution/script"
+2018-09-18 11:38:14,894 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.read_genome_tsv:NA:1]: job id: 4095674
+2018-09-18 11:38:14,901 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.read_genome_tsv:NA:1]: Status change from - to WaitingForReturnCodeFile
+2018-09-18 11:38:15,543 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Starting atac.trim_adapter (2 shards)
+2018-09-18 11:38:15,977 WARN  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:0:1]: Unrecognized runtime attribute keys: disks
+2018-09-18 11:38:15,977 WARN  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:1:1]: Unrecognized runtime attribute keys: disks
+2018-09-18 11:38:16,095 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:0:1]: `python $(which encode_trim_adapter.py) \
+	/home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/write_tsv_391b0ad8899b0295b5589ede38c89d53.tmp \
+	--adapters /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
+	--paired-end \
+	--auto-detect-adapter \
+	--min-trim-len 5 \
+	--err-rate 0.1 \
+	--nth 1`
+2018-09-18 11:38:16,096 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:1:1]: `python $(which encode_trim_adapter.py) \
+	/home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/write_tsv_c77118ec13d881a420ba53114edf3313.tmp \
+	--adapters /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
+	--paired-end \
+	--auto-detect-adapter \
+	--min-trim-len 5 \
+	--err-rate 0.1 \
+	--nth 1`
+2018-09-18 11:38:16,109 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:0:1]: executing: sbatch \
+--export=ALL \
+-J cromwell_047591ee_trim_adapter \
+-D /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0 \
+-o /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/stdout \
+-e /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/stderr \
+-t 1440 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=1 \
+--mem=12000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/script"
+2018-09-18 11:38:16,112 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:1:1]: executing: sbatch \
+--export=ALL \
+-J cromwell_047591ee_trim_adapter \
+-D /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1 \
+-o /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/stdout \
+-e /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/stderr \
+-t 1440 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=1 \
+--mem=12000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/script"
+2018-09-18 11:38:19,874 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:1:1]: job id: 4095677
+2018-09-18 11:38:19,874 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:0:1]: job id: 4095676
+2018-09-18 11:38:19,877 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:0:1]: Status change from - to WaitingForReturnCodeFile
+2018-09-18 11:38:19,877 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:1:1]: Status change from - to WaitingForReturnCodeFile
+2018-09-18 11:39:37,813 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.read_genome_tsv:NA:1]: Status change from WaitingForReturnCodeFile to Done
+2018-09-18 12:47:28,548 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.trim_adapter:0:1]: Status change from WaitingForReturnCodeFile to Done
+2018-09-18 12:47:31,020 INFO  - WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [UUID(047591ee)]: Starting atac.bowtie2
+2018-09-18 12:47:31,967 WARN  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.bowtie2:0:1]: Unrecognized runtime attribute keys: preemptible, disks
+2018-09-18 12:47:32,005 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.bowtie2:0:1]: `python $(which encode_bowtie2.py) \
+	/home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/inputs/-376394233/rn6.fa.tar \
+	/home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/inputs/-621355549/merge_fastqs_R1_20180725-5-Liver-002-powder_S5_L001_R1_001.trim.merged.fastq.gz /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/inputs/-621355549/merge_fastqs_R2_20180725-5-Liver-002-powder_S5_L001_R2_001.trim.merged.fastq.gz \
+	--paired-end \
+	--multimapping 4 \
+	 \
+	--nth 2`
+2018-09-18 12:47:32,029 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.bowtie2:0:1]: executing: sbatch \
+--export=ALL \
+-J cromwell_047591ee_bowtie2 \
+-D /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0 \
+-o /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/execution/stdout \
+-e /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/execution/stderr \
+-t 600 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=2 \
+--mem=16000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/execution/script"
+2018-09-18 12:47:34,871 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.bowtie2:0:1]: job id: 4095750
+2018-09-18 12:47:34,874 INFO  - DispatchedConfigAsyncJobExecutionActor [UUID(047591ee)atac.bowtie2:0:1]: Status change from - to WaitingForReturnCodeFile

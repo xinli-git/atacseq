@@ -4,7 +4,7 @@
 source activate encode-atac-seq-pipeline # IMPORTANT!
 
 # configured parameters
-workflow_opt=~/projects/atacseq/atac/json/scg.json
+workflow_opt=~/projects/atacseq/atac_scg/json/scg.json
 
 # fixed parameters, where you cloned the tool
 backend_conf=~/tools/atac-seq-pipeline/backends/backend.conf
@@ -18,5 +18,5 @@ input_json=$1
 
 java -jar -Dconfig.file=${backend_conf} -Dbackend.default=slurm ${cromwell_jar} run ${cromwell_wdl} -i ${input_json} -o ${workflow_opt}
 
-
+# output will be in current dir, cannot config
 

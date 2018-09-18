@@ -1,0 +1,182 @@
+[2018-09-18 11:37:38,51] [info] Running with database db.url = jdbc:hsqldb:mem:0c064148-2792-4406-8ec2-b10e5d52b17d;shutdown=false;hsqldb.tx=mvcc
+[2018-09-18 11:37:48,64] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
+[2018-09-18 11:37:48,65] [info] [RenameWorkflowOptionsInMetadata] 100%
+[2018-09-18 11:37:48,77] [info] Running with database db.url = jdbc:hsqldb:mem:2f1f4b7d-b161-49ed-a7eb-72e3a04f30f5;shutdown=false;hsqldb.tx=mvcc
+[2018-09-18 11:37:49,13] [[38;5;220mwarn[0m] This actor factory is deprecated. Please use cromwell.backend.google.pipelines.v1alpha2.PipelinesApiLifecycleActorFactory for PAPI v1 or cromwell.backend.google.pipelines.v2alpha1.PipelinesApiLifecycleActorFactory for PAPI v2
+[2018-09-18 11:37:49,15] [[38;5;220mwarn[0m] Couldn't find a suitable DSN, defaulting to a Noop one.
+[2018-09-18 11:37:49,16] [info] Using noop to send events.
+[2018-09-18 11:37:49,43] [info] Slf4jLogger started
+[2018-09-18 11:37:49,74] [info] Workflow heartbeat configuration:
+{
+  "cromwellId" : "cromid-d7cf97d",
+  "heartbeatInterval" : "2 minutes",
+  "ttl" : "10 minutes",
+  "writeBatchSize" : 10000,
+  "writeThreshold" : 10000
+}
+[2018-09-18 11:37:49,80] [info] Metadata summary refreshing every 2 seconds.
+[2018-09-18 11:37:49,85] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
+[2018-09-18 11:37:49,85] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
+[2018-09-18 11:37:49,85] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
+[2018-09-18 11:37:50,94] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
+[2018-09-18 11:37:50,98] [info] PAPIQueryManager Running with 3 workers
+[2018-09-18 11:37:50,99] [info] JES batch polling interval is 33333 milliseconds
+[2018-09-18 11:37:50,99] [info] JES batch polling interval is 33333 milliseconds
+[2018-09-18 11:37:50,99] [info] JES batch polling interval is 33333 milliseconds
+[2018-09-18 11:37:50,99] [info] SingleWorkflowRunnerActor: Version 34
+[2018-09-18 11:37:51,00] [info] SingleWorkflowRunnerActor: Submitting workflow
+[2018-09-18 11:37:51,05] [info] Unspecified type (Unspecified version) workflow 047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 submitted
+[2018-09-18 11:37:51,10] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7[0m
+[2018-09-18 11:37:51,10] [info] 1 new workflows fetched
+[2018-09-18 11:37:51,10] [info] WorkflowManagerActor Starting workflow [38;5;2m047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7[0m
+[2018-09-18 11:37:51,10] [[38;5;220mwarn[0m] SingleWorkflowRunnerActor: received unexpected message: Done in state RunningSwraData
+[2018-09-18 11:37:51,11] [info] WorkflowManagerActor Successfully started WorkflowActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7
+[2018-09-18 11:37:51,11] [info] Retrieved 1 workflows from the WorkflowStoreActor
+[2018-09-18 11:37:51,12] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
+[2018-09-18 11:37:51,19] [info] MaterializeWorkflowDescriptorActor [[38;5;2m047591ee[0m]: Parsing workflow as WDL draft-2
+[2018-09-18 11:38:08,67] [info] MaterializeWorkflowDescriptorActor [[38;5;2m047591ee[0m]: Call-to-Backend assignments: atac.bowtie2 -> slurm, atac.xcor -> slurm, atac.overlap_pr -> slurm, atac.filter -> slurm, atac.bam2ta -> slurm, atac.overlap_ppr -> slurm, atac.macs2_pr2 -> slurm, atac.trim_adapter -> slurm, atac.read_genome_tsv -> slurm, atac.pool_ta_pr1 -> slurm, atac.macs2_pooled -> slurm, atac.macs2 -> slurm, atac.ataqc -> slurm, atac.idr_ppr -> slurm, atac.pool_ta -> slurm, atac.reproducibility_overlap -> slurm, atac.macs2_ppr1 -> slurm, atac.spr -> slurm, atac.macs2_ppr2 -> slurm, atac.macs2_pr1 -> slurm, atac.pool_ta_pr2 -> slurm, atac.overlap -> slurm, atac.idr -> slurm, atac.qc_report -> slurm, atac.reproducibility_idr -> slurm, atac.idr_pr -> slurm
+[2018-09-18 11:38:08,85] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [preemptible, disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,85] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,85] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,85] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,85] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,86] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,87] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,87] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,87] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,87] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,87] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,87] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,87] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:08,87] [[38;5;220mwarn[0m] slurm [[38;5;2m047591ee[0m]: Key/s [disks] is/are not supported by backend. Unsupported attributes will not be part of job executions.
+[2018-09-18 11:38:11,16] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Starting atac.read_genome_tsv
+[2018-09-18 11:38:11,17] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Condition met: '!true_rep_only'. Running conditional section
+[2018-09-18 11:38:11,17] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Condition met: 'enable_idr'. Running conditional section
+[2018-09-18 11:38:11,18] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Condition met: '!align_only && !true_rep_only'. Running conditional section
+[2018-09-18 11:38:11,18] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Condition met: '!align_only && !true_rep_only && enable_idr'. Running conditional section
+[2018-09-18 11:38:11,19] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Condition met: 'enable_idr'. Running conditional section
+[2018-09-18 11:38:11,19] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Condition met: '!disable_xcor'. Running conditional section
+[2018-09-18 11:38:12,13] [[38;5;220mwarn[0m] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.read_genome_tsv:NA:1]: Unrecognized runtime attribute keys: disks
+[2018-09-18 11:38:12,68] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.read_genome_tsv:NA:1]: [38;5;5mcat /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv/inputs/1727929217/rn6.tsv[0m
+[2018-09-18 11:38:12,74] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.read_genome_tsv:NA:1]: executing: sbatch \
+--export=ALL \
+-J cromwell_047591ee_read_genome_tsv \
+-D /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv \
+-o /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv/execution/stdout \
+-e /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv/execution/stderr \
+-t 60 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=1 \
+--mem=4000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-read_genome_tsv/execution/script"
+[2018-09-18 11:38:14,89] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.read_genome_tsv:NA:1]: job id: 4095674
+[2018-09-18 11:38:14,90] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.read_genome_tsv:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-18 11:38:15,54] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Starting atac.trim_adapter (2 shards)
+[2018-09-18 11:38:15,97] [[38;5;220mwarn[0m] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:0:1]: Unrecognized runtime attribute keys: disks
+[2018-09-18 11:38:15,97] [[38;5;220mwarn[0m] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:1:1]: Unrecognized runtime attribute keys: disks
+[2018-09-18 11:38:16,00] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/inputs/-1883255764/20180725-6-Liver-002-powder_S6_L001_R1_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L001_R1_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,00] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/inputs/-1883255764/20180725-5-Liver-002-powder_S5_L001_R1_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-5-Liver-002-powder_S5_L001_R1_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,00] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/inputs/-1883255764/20180725-6-Liver-002-powder_S6_L001_R2_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L001_R2_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,01] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/inputs/-1883255764/20180725-5-Liver-002-powder_S5_L001_R2_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-5-Liver-002-powder_S5_L001_R2_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,01] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/inputs/-1883255764/20180725-6-Liver-002-powder_S6_L002_R1_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L002_R1_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,01] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/inputs/-1883255764/20180725-5-Liver-002-powder_S5_L002_R1_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-5-Liver-002-powder_S5_L002_R1_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,02] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/inputs/-1883255764/20180725-6-Liver-002-powder_S6_L002_R2_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L002_R2_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,02] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/inputs/-1883255764/20180725-5-Liver-002-powder_S5_L002_R2_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-5-Liver-002-powder_S5_L002_R2_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,02] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/inputs/-1883255764/20180725-5-Liver-002-powder_S5_L003_R1_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-5-Liver-002-powder_S5_L003_R1_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,02] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/inputs/-1883255764/20180725-6-Liver-002-powder_S6_L003_R1_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L003_R1_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,03] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/inputs/-1883255764/20180725-5-Liver-002-powder_S5_L003_R2_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-5-Liver-002-powder_S5_L003_R2_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,03] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/inputs/-1883255764/20180725-6-Liver-002-powder_S6_L003_R2_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L003_R2_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,03] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/inputs/-1883255764/20180725-5-Liver-002-powder_S5_L004_R1_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-5-Liver-002-powder_S5_L004_R1_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,03] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/inputs/-1883255764/20180725-6-Liver-002-powder_S6_L004_R1_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L004_R1_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,04] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/inputs/-1883255764/20180725-5-Liver-002-powder_S5_L004_R2_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-5-Liver-002-powder_S5_L004_R2_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,04] [[38;5;220mwarn[0m] Localization via hard link has failed: /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/inputs/-1883255764/20180725-6-Liver-002-powder_S6_L004_R2_001.fastq.gz -> /home/xli6/projects/atacseq/fastq/kevin/FASTQ_RUN8/20180725-6-Liver-002-powder_S6_L004_R2_001.fastq.gz: Operation not permitted
+[2018-09-18 11:38:16,09] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:0:1]: [38;5;5mpython $(which encode_trim_adapter.py) \
+	/home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/write_tsv_391b0ad8899b0295b5589ede38c89d53.tmp \
+	--adapters /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
+	--paired-end \
+	--auto-detect-adapter \
+	--min-trim-len 5 \
+	--err-rate 0.1 \
+	--nth 1[0m
+[2018-09-18 11:38:16,09] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:1:1]: [38;5;5mpython $(which encode_trim_adapter.py) \
+	/home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/write_tsv_c77118ec13d881a420ba53114edf3313.tmp \
+	--adapters /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/write_tsv_d41d8cd98f00b204e9800998ecf8427e.tmp \
+	--paired-end \
+	--auto-detect-adapter \
+	--min-trim-len 5 \
+	--err-rate 0.1 \
+	--nth 1[0m
+[2018-09-18 11:38:16,10] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:0:1]: executing: sbatch \
+--export=ALL \
+-J cromwell_047591ee_trim_adapter \
+-D /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0 \
+-o /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/stdout \
+-e /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/stderr \
+-t 1440 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=1 \
+--mem=12000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-0/execution/script"
+[2018-09-18 11:38:16,11] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:1:1]: executing: sbatch \
+--export=ALL \
+-J cromwell_047591ee_trim_adapter \
+-D /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1 \
+-o /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/stdout \
+-e /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/stderr \
+-t 1440 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=1 \
+--mem=12000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-trim_adapter/shard-1/execution/script"
+[2018-09-18 11:38:19,87] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:1:1]: job id: 4095677
+[2018-09-18 11:38:19,87] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:0:1]: job id: 4095676
+[2018-09-18 11:38:19,87] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-18 11:38:19,87] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-09-18 11:39:37,81] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.read_genome_tsv:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-18 12:47:28,54] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.trim_adapter:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-09-18 12:47:31,02] [info] WorkflowExecutionActor-047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7 [[38;5;2m047591ee[0m]: Starting atac.bowtie2
+[2018-09-18 12:47:31,96] [[38;5;220mwarn[0m] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.bowtie2:0:1]: Unrecognized runtime attribute keys: preemptible, disks
+[2018-09-18 12:47:32,00] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.bowtie2:0:1]: [38;5;5mpython $(which encode_bowtie2.py) \
+	/home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/inputs/-376394233/rn6.fa.tar \
+	/home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/inputs/-621355549/merge_fastqs_R1_20180725-5-Liver-002-powder_S5_L001_R1_001.trim.merged.fastq.gz /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/inputs/-621355549/merge_fastqs_R2_20180725-5-Liver-002-powder_S5_L001_R2_001.trim.merged.fastq.gz \
+	--paired-end \
+	--multimapping 4 \
+	 \
+	--nth 2[0m
+[2018-09-18 12:47:32,03] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.bowtie2:0:1]: executing: sbatch \
+--export=ALL \
+-J cromwell_047591ee_bowtie2 \
+-D /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0 \
+-o /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/execution/stdout \
+-e /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/execution/stderr \
+-t 600 \
+-n 1 \
+--ntasks-per-node=1 \
+--cpus-per-task=2 \
+--mem=16000 \
+ \
+--account smontgom \
+--wrap "/bin/bash /home/xli6/projects/atacseq/atac_scg/cromwell-executions/atac/047591ee-9f7a-4e15-a6bc-3b1acf7d0bd7/call-bowtie2/shard-0/execution/script"
+[2018-09-18 12:47:34,87] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.bowtie2:0:1]: job id: 4095750
+[2018-09-18 12:47:34,87] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2m047591ee[0matac.bowtie2:0:1]: Status change from - to WaitingForReturnCodeFile
