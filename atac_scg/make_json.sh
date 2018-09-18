@@ -1,15 +1,14 @@
 #!/bin/bash
 
 
-base_json=~/projects/atacseq/atac/json/base_json
-genome_ref=~/projects/atacseq/atac/reference/YOUR_OWN_GENOME.tsv
-
+base_json=~/projects/atacseq/atac_scg/json/base_json
+genome_ref=~/projects/atacseq/atac_scg/reference/rn6/rn6.tsv
 
 fastq_dir=~/projects/atacseq/fastq/kevin/FASTQ_RUN8
 merged_fastq_dir=~/projects/atacseq/fastq/merged
 
 
-json_dir=~/projects/atacseq/atac/json
+json_dir=~/projects/atacseq/atac_scg/json
 
 #suffix of input fastq files
 SUF_R1=_R1_001.fastq.gz

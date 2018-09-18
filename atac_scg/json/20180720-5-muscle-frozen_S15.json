@@ -2,21 +2,28 @@
 "atac.qc_report.name" : "20180720-5-muscle-frozen_S15",
 "atac.qc_report.desc" : "ATAC-seq on motrpac",
 "atac.pipeline_type" : "atac",
-"atac.genome_tsv" : "/home/xli6/projects/atacseq/atac/reference/YOUR_OWN_GENOME.tsv",
+"atac.genome_tsv" : "/home/xli6/projects/atacseq/atac_scg/reference/rn6/rn6.tsv",
 
 
-   "atac.paired_end" : true,
+    "atac.paired_end" : true,
     "atac.multimapping" : 4,
 
     "atac.trim_adapter.auto_detect_adapter" : true,
+    "atac.trim_adapter.cpu" : 1,
+
+    "atac.bowtie2.cpu" : 2,
+    "atac.bowtie2.mem_mb" : 16000,
+	"atac.bowtie2.time_hr" : 10,
+
+    "atac.filter.cpu" : 1,
+    "atac.filter.mem_mb" : 12000,
+
+    "atac.macs2_mem_mb" : 16000,
 
     "atac.smooth_win" : 73,
     "atac.enable_idr" : true,
     "atac.idr_thresh" : 0.05,
 
-        "atac.bowtie2.cpu" : 4,
-        "atac.bowtie2.mem_mb" : 20000,
-        "atac.bowtie2.time_hr" : 10,
 
 
 "atac.fastqs_rep1_R1" : [
