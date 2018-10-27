@@ -124,3 +124,538 @@
 [2018-10-26 23:08:43,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bowtie2:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-bowtie2/shard-1/execution/script
 [2018-10-26 23:08:44,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bowtie2:1:1]: job id: 87181
 [2018-10-26 23:08:44,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bowtie2:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 01:13:40,77] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bowtie2:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 02:02:12,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bowtie2:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 02:02:18,14] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.filter (2 shards)
+[2018-10-27 02:02:18,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 02:02:18,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 02:02:18,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:1:1]: [38;5;5mpython $(which encode_filter.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-filter/shard-1/inputs/648681029/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.bam \
+	--paired-end \
+	--multimapping 4 \
+	--dup-marker picard \
+	--mapq-thresh 30 \
+	 \
+	--nth 1
+# ugly part to deal with optional outputs with Google JES backend
+
+touch null[0m
+[2018-10-27 02:02:18,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:0:1]: [38;5;5mpython $(which encode_filter.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-filter/shard-0/inputs/656440388/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.bam \
+	--paired-end \
+	--multimapping 4 \
+	--dup-marker picard \
+	--mapq-thresh 30 \
+	 \
+	--nth 1
+# ugly part to deal with optional outputs with Google JES backend
+
+touch null[0m
+[2018-10-27 02:02:18,41] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-filter/shard-0/execution/script
+[2018-10-27 02:02:18,42] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-filter/shard-1/execution/script
+[2018-10-27 02:02:19,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:0:1]: job id: 88258
+[2018-10-27 02:02:19,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:1:1]: job id: 88261
+[2018-10-27 02:02:19,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 02:02:19,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 02:50:21,76] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:00:46,36] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.filter:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:00:52,04] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.bam2ta (2 shards)
+[2018-10-27 03:00:52,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:00:52,38] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:00:52,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:1:1]: [38;5;5mpython $(which encode_bam2ta.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-bam2ta/shard-1/inputs/333986279/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.bam \
+	--paired-end \
+	 \
+	--regex-grep-v-ta 'chrM' \
+	--subsample 0 \[0m
+[2018-10-27 03:00:52,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:0:1]: [38;5;5mpython $(which encode_bam2ta.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-bam2ta/shard-0/inputs/341745638/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.bam \
+	--paired-end \
+	 \
+	--regex-grep-v-ta 'chrM' \
+	--subsample 0 \[0m
+[2018-10-27 03:00:52,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-bam2ta/shard-0/execution/script
+[2018-10-27 03:00:52,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-bam2ta/shard-1/execution/script
+[2018-10-27 03:00:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:1:1]: job id: 89378
+[2018-10-27 03:00:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:0:1]: job id: 89381
+[2018-10-27 03:00:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:00:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:10:16,08] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:10:50,68] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.bam2ta:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:10:53,85] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Condition met: '!true_rep_only && length(tas_) > 1'. Running conditional section
+[2018-10-27 03:10:53,85] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Condition met: 'length(tas_) > 1'. Running conditional section
+[2018-10-27 03:10:55,95] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.pool_ta, atac.spr (2 shards), atac.xcor (2 shards), atac.macs2 (2 shards)
+[2018-10-27 03:10:56,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:10:56,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:10:56,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:10:56,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:10:56,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:10:56,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:10:56,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta:NA:1]: [38;5;5mpython $(which encode_pool_ta.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta/inputs/550877184/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta/inputs/543117825/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz[0m
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:1:1]: [38;5;5mpython $(which encode_spr.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-spr/shard-1/inputs/543117825/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+	--paired-end[0m
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:0:1]: [38;5;5mpython $(which encode_spr.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-spr/shard-0/inputs/550877184/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+	--paired-end[0m
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:0:1]: [38;5;5mpython $(which encode_xcor.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-xcor/shard-0/inputs/550877184/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+	--paired-end \
+	--subsample 25000000 \
+	--speak=0 \
+	--nth 2[0m
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:1:1]: [38;5;5mpython $(which encode_xcor.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-xcor/shard-1/inputs/543117825/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+	--paired-end \
+	--subsample 25000000 \
+	--speak=0 \
+	--nth 2[0m
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2/shard-0/inputs/550877184/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2/shard-0/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	--make-signal \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2/shard-0/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+
+touch null[0m
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:1:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2/shard-1/inputs/543117825/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2/shard-1/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	--make-signal \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2/shard-1/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+
+touch null[0m
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta/execution/script
+[2018-10-27 03:10:56,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-spr/shard-0/execution/script
+[2018-10-27 03:10:56,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-spr/shard-1/execution/script
+[2018-10-27 03:10:56,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-xcor/shard-1/execution/script
+[2018-10-27 03:10:56,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-xcor/shard-0/execution/script
+[2018-10-27 03:10:56,40] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2/shard-0/execution/script
+[2018-10-27 03:10:56,41] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2/shard-1/execution/script
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:1:1]: job id: 89511
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:0:1]: job id: 89526
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta:NA:1]: job id: 89509
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:1:1]: job id: 89556
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:0:1]: job id: 89512
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:1:1]: job id: 89529
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:0:1]: job id: 89552
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:10:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:10:59,45] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:10:59,45] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:10:59,45] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:11:46,47] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:11:47,96] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.macs2_pooled
+[2018-10-27 03:11:48,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pooled:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:11:48,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pooled:NA:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pooled/inputs/-1488621417/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pooled/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	--make-signal \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pooled/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+
+touch null[0m
+[2018-10-27 03:11:48,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pooled:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pooled/execution/script
+[2018-10-27 03:11:48,92] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:11:49,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pooled:NA:1]: job id: 89775
+[2018-10-27 03:11:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pooled:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:11:50,00] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.macs2_pr1, atac.macs2_pr2
+[2018-10-27 03:11:50,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:11:50,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:11:50,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:1:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr1/shard-1/inputs/-187251495/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr1/shard-1/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	 \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr1/shard-1/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+touch null.pval.signal.bigwig null.fc.signal.bigwig
+touch null[0m
+[2018-10-27 03:11:50,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:1:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr2/shard-1/inputs/2144094498/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr2/shard-1/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	 \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr2/shard-1/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+touch null.pval.signal.bigwig null.fc.signal.bigwig
+touch null[0m
+[2018-10-27 03:11:50,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr2/shard-1/execution/script
+[2018-10-27 03:11:50,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr1/shard-1/execution/script
+[2018-10-27 03:11:52,11] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.spr:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:11:54,08] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.macs2_pr1, atac.macs2_pr2
+[2018-10-27 03:11:54,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:11:54,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:11:54,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr2/shard-0/inputs/-2143113439/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr2/shard-0/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	 \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr2/shard-0/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+touch null.pval.signal.bigwig null.fc.signal.bigwig
+touch null[0m
+[2018-10-27 03:11:54,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:0:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr1/shard-0/inputs/-179492136/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr1/shard-0/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	 \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr1/shard-0/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+touch null.pval.signal.bigwig null.fc.signal.bigwig
+touch null[0m
+[2018-10-27 03:11:54,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr2/shard-0/execution/script
+[2018-10-27 03:11:54,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_pr1/shard-0/execution/script
+[2018-10-27 03:11:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:1:1]: job id: 89790
+[2018-10-27 03:11:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:1:1]: job id: 89792
+[2018-10-27 03:11:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:0:1]: job id: 89816
+[2018-10-27 03:11:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:0:1]: job id: 89815
+[2018-10-27 03:11:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:11:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:11:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:11:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:11:56,12] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.pool_ta_pr1, atac.pool_ta_pr2
+[2018-10-27 03:11:56,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr1:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:11:56,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr1:NA:1]: [38;5;5mpython $(which encode_pool_ta.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta_pr1/inputs/-179492136/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta_pr1/inputs/-187251495/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr1.tagAlign.gz[0m
+[2018-10-27 03:11:56,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr1:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta_pr1/execution/script
+[2018-10-27 03:11:59,42] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr1:NA:1]: job id: 89838
+[2018-10-27 03:11:59,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr1:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:12:21,66] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr1:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:12:22,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr2:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:12:22,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr2:NA:1]: [38;5;5mpython $(which encode_pool_ta.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta_pr2/inputs/-2143113439/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta_pr2/inputs/2144094498/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr2.tagAlign.gz[0m
+[2018-10-27 03:12:22,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr2:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-pool_ta_pr2/execution/script
+[2018-10-27 03:12:23,66] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.macs2_ppr1
+[2018-10-27 03:12:24,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr2:NA:1]: job id: 89891
+[2018-10-27 03:12:24,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr2:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:12:49,04] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.pool_ta_pr2:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:12:49,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr1:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:12:49,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr1:NA:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_ppr1/inputs/1257553863/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.pooled.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_ppr1/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	 \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_ppr1/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+touch null.pval.signal.bigwig null.fc.signal.bigwig
+touch null[0m
+[2018-10-27 03:12:49,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr1:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_ppr1/execution/script
+[2018-10-27 03:12:49,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr1:NA:1]: job id: 89916
+[2018-10-27 03:12:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr1:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:12:50,18] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.macs2_ppr2
+[2018-10-27 03:15:18,94] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:15:19,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr2:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:15:19,37] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr2:NA:1]: [38;5;5mpython $(which encode_macs2_atac.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_ppr2/inputs/1249794504/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.pooled.tagAlign.gz \
+	--gensz 2870182909 \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_ppr2/inputs/868722754/rn6.chrom.sizes \
+	--cap-num-peak 300000 \
+	--pval-thresh 0.01 \
+	--smooth-win 73 \
+	 \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_ppr2/inputs/868722754/rn6_blacklist.bed.gz
+
+# ugly part to deal with optional outputs with Google JES backend
+touch null.pval.signal.bigwig null.fc.signal.bigwig
+touch null[0m
+[2018-10-27 03:15:19,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr2:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-macs2_ppr2/execution/script
+[2018-10-27 03:15:19,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr2:NA:1]: job id: 90154
+[2018-10-27 03:15:19,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr2:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:15:20,35] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:16:47,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr2:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:16:52,12] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pr1:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:16:57,03] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Condition met: 'enable_idr && length(peaks_pr1_) > 1'. Running conditional section
+[2018-10-27 03:16:57,03] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Condition met: 'length(peaks_pr1_) > 1'. Running conditional section
+[2018-10-27 03:18:14,92] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr1:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:18:35,48] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:19:50,59] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.xcor:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:21:05,03] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_ppr2:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:30:53,36] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:32:41,19] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:32:44,63] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.idr_pr (2 shards), atac.overlap_pr (2 shards)
+[2018-10-27 03:32:45,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:32:45,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:32:45,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:32:45,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:1:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:32:45,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:1:1]: [38;5;5mpython $(which encode_idr.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-1/inputs/1352461554/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr1.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-1/inputs/1982920179/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr2.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-1/inputs/-376128318/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.narrowPeak.gz \
+	--prefix rep2-pr \
+	--idr-thresh 0.05 \
+	--peak-type narrowPeak \
+	--idr-rank p.value \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-1/inputs/868722754/rn6.chrom.sizes \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-1/inputs/868722754/rn6_blacklist.bed.gz \
+	--ta /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-1/inputs/543117825/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz
+
+# ugly part to deal with optional outputs with Google backend
+
+touch null[0m
+[2018-10-27 03:32:45,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:0:1]: [38;5;5mpython $(which encode_naive_overlap.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-0/inputs/1360220913/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-0/inputs/1990679538/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-0/inputs/-368368959/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.narrowPeak.gz \
+	--prefix rep1-pr \
+	--peak-type narrowPeak \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-0/inputs/868722754/rn6.chrom.sizes \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-0/inputs/868722754/rn6_blacklist.bed.gz \
+	--ta /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-0/inputs/550877184/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz
+
+# ugly part to deal with optional outputs with Google backend
+
+touch null[0m
+[2018-10-27 03:32:45,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:1:1]: [38;5;5mpython $(which encode_naive_overlap.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-1/inputs/1352461554/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr1.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-1/inputs/1982920179/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr2.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-1/inputs/-376128318/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.narrowPeak.gz \
+	--prefix rep2-pr \
+	--peak-type narrowPeak \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-1/inputs/868722754/rn6.chrom.sizes \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-1/inputs/868722754/rn6_blacklist.bed.gz \
+	--ta /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-1/inputs/543117825/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz
+
+# ugly part to deal with optional outputs with Google backend
+
+touch null[0m
+[2018-10-27 03:32:45,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:0:1]: [38;5;5mpython $(which encode_idr.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-0/inputs/1360220913/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-0/inputs/1990679538/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-0/inputs/-368368959/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.narrowPeak.gz \
+	--prefix rep1-pr \
+	--idr-thresh 0.05 \
+	--peak-type narrowPeak \
+	--idr-rank p.value \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-0/inputs/868722754/rn6.chrom.sizes \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-0/inputs/868722754/rn6_blacklist.bed.gz \
+	--ta /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-0/inputs/550877184/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.tagAlign.gz
+
+# ugly part to deal with optional outputs with Google backend
+
+touch null[0m
+[2018-10-27 03:32:45,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-0/execution/script
+[2018-10-27 03:32:45,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_pr/shard-1/execution/script
+[2018-10-27 03:32:45,40] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:1:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-1/execution/script
+[2018-10-27 03:32:45,40] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_pr/shard-0/execution/script
+[2018-10-27 03:32:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:1:1]: job id: 91056
+[2018-10-27 03:32:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:0:1]: job id: 91063
+[2018-10-27 03:32:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:1:1]: job id: 91050
+[2018-10-27 03:32:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:0:1]: job id: 91049
+[2018-10-27 03:32:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:32:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:32:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:32:49,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:1:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:33:22,23] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:33:23,32] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_pr:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:35:36,68] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:1:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:36:28,29] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_pr:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:51:50,51] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.macs2_pooled:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:51:53,15] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.idr, atac.idr_ppr, atac.overlap, atac.overlap_ppr
+[2018-10-27 03:51:53,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:51:53,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_ppr:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:51:53,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_ppr:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:51:53,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr:0:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:51:53,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_ppr:NA:1]: [38;5;5mpython $(which encode_naive_overlap.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_ppr/inputs/862822119/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.pooled.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_ppr/inputs/855062760/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.pooled.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_ppr/inputs/-1310605917/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.pval0.01.300K.narrowPeak.gz \
+	--prefix ppr \
+	--peak-type narrowPeak \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_ppr/inputs/868722754/rn6.chrom.sizes \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_ppr/inputs/868722754/rn6_blacklist.bed.gz \
+	--ta /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_ppr/inputs/-1488621417/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.tagAlign.gz
+
+# ugly part to deal with optional outputs with Google backend
+
+touch null[0m
+[2018-10-27 03:51:53,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap:0:1]: [38;5;5mpython $(which encode_naive_overlap.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap/shard-0/inputs/-368368959/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap/shard-0/inputs/-376128318/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap/shard-0/inputs/-1310605917/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.pval0.01.300K.narrowPeak.gz \
+	--prefix rep1-rep2 \
+	--peak-type narrowPeak \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap/shard-0/inputs/868722754/rn6.chrom.sizes \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap/shard-0/inputs/868722754/rn6_blacklist.bed.gz \
+	--ta /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap/shard-0/inputs/-1488621417/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.tagAlign.gz
+
+# ugly part to deal with optional outputs with Google backend
+
+touch null[0m
+[2018-10-27 03:51:53,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_ppr:NA:1]: [38;5;5mpython $(which encode_idr.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_ppr/inputs/862822119/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.pooled.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_ppr/inputs/855062760/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.pooled.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_ppr/inputs/-1310605917/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.pval0.01.300K.narrowPeak.gz \
+	--prefix ppr \
+	--idr-thresh 0.05 \
+	--peak-type narrowPeak \
+	--idr-rank p.value \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_ppr/inputs/868722754/rn6.chrom.sizes \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_ppr/inputs/868722754/rn6_blacklist.bed.gz \
+	--ta /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_ppr/inputs/-1488621417/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.tagAlign.gz
+
+# ugly part to deal with optional outputs with Google backend
+
+touch null[0m
+[2018-10-27 03:51:53,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr:0:1]: [38;5;5mpython $(which encode_idr.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr/shard-0/inputs/-368368959/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr/shard-0/inputs/-376128318/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr/shard-0/inputs/-1310605917/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.pval0.01.300K.narrowPeak.gz \
+	--prefix rep1-rep2 \
+	--idr-thresh 0.05 \
+	--peak-type narrowPeak \
+	--idr-rank p.value \
+	--chrsz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr/shard-0/inputs/868722754/rn6.chrom.sizes \
+	--blacklist /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr/shard-0/inputs/868722754/rn6_blacklist.bed.gz \
+	--ta /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr/shard-0/inputs/-1488621417/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.tagAlign.gz
+
+# ugly part to deal with optional outputs with Google backend
+
+touch null[0m
+[2018-10-27 03:51:53,40] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap/shard-0/execution/script
+[2018-10-27 03:51:53,40] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_ppr:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr_ppr/execution/script
+[2018-10-27 03:51:53,40] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_ppr:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-overlap_ppr/execution/script
+[2018-10-27 03:51:53,40] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr:0:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-idr/shard-0/execution/script
+[2018-10-27 03:51:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap:0:1]: job id: 91688
+[2018-10-27 03:51:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr:0:1]: job id: 91686
+[2018-10-27 03:51:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_ppr:NA:1]: job id: 91683
+[2018-10-27 03:51:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_ppr:NA:1]: job id: 91689
+[2018-10-27 03:51:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_ppr:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:51:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:51:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr:0:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:51:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_ppr:NA:1]: Status change from - to WaitingForReturnCodeFile
+[2018-10-27 03:52:57,66] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap_ppr:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:52:57,82] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.overlap:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:53:00,47] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.reproducibility_overlap
+[2018-10-27 03:53:01,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_overlap:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:53:01,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_overlap:NA:1]: [38;5;5mpython $(which encode_reproducibility_qc.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_overlap/inputs/711320440/rep1-rep2.overlap.bfilt.narrowPeak.gz \
+	--peaks-pr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_overlap/inputs/-808538047/rep1-pr.overlap.bfilt.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_overlap/inputs/-816297406/rep2-pr.overlap.bfilt.narrowPeak.gz \
+	--peak-ppr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_overlap/inputs/48661049/ppr.overlap.bfilt.narrowPeak.gz \
+	--prefix overlap[0m
+[2018-10-27 03:53:01,38] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_overlap:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_overlap/execution/script
+[2018-10-27 03:53:04,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_overlap:NA:1]: job id: 91943
+[2018-10-27 03:53:04,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_overlap:NA:1]: Status change from - to Done
+[2018-10-27 03:54:50,40] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr:0:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:55:47,50] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.idr_ppr:NA:1]: Status change from WaitingForReturnCodeFile to Done
+[2018-10-27 03:55:49,79] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.reproducibility_idr
+[2018-10-27 03:55:50,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_idr:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:55:50,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_idr:NA:1]: [38;5;5mpython $(which encode_reproducibility_qc.py) \
+	/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_idr/inputs/-91152280/rep1-rep2.idr0.05.bfilt.narrowPeak.gz \
+	--peaks-pr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_idr/inputs/-1485370031/rep1-pr.idr0.05.bfilt.narrowPeak.gz /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_idr/inputs/-1493129390/rep2-pr.idr0.05.bfilt.narrowPeak.gz \
+	--peak-ppr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_idr/inputs/1486206761/ppr.idr0.05.bfilt.narrowPeak.gz \
+	--prefix idr[0m
+[2018-10-27 03:55:50,39] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_idr:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-reproducibility_idr/execution/script
+[2018-10-27 03:55:54,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_idr:NA:1]: job id: 92224
+[2018-10-27 03:55:54,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.reproducibility_idr:NA:1]: Status change from - to Done
+[2018-10-27 03:55:56,93] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Starting atac.qc_report
+[2018-10-27 03:55:57,37] [[38;5;220mwarn[0m] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.qc_report:NA:1]: Unrecognized runtime attribute keys: disks, cpu, time, memory
+[2018-10-27 03:55:57,42] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.qc_report:NA:1]: [38;5;5mpython $(which encode_qc_report.py) \
+	--name '20180725-2-Gastroc-002-powder_S2 vs 20180725-3-Gastroc-002-powder_S3' \
+	--desc 'ATAC-seq on motrpac' \
+	--paired-end \
+	--pipeline-type atac \
+	--peak-caller macs2 \
+	--idr-thresh 0.05 \
+	--flagstat-qcs /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1818727504/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.flagstat.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1826486863/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.flagstat.qc \
+	--nodup-flagstat-qcs /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-2133422254/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.flagstat.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-2141181613/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.flagstat.qc \
+	--dup-qcs /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/1045153555/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.dup.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/1037394196/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.dup.qc \
+	--pbc-qcs /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/5882636/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.dupmark.pbc.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1876723/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.dupmark.pbc.qc \
+	--xcor-plots /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1609629241/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.no_chrM.R1.25M.cc.plot.png /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1617388600/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.no_chrM.R1.25M.cc.plot.png \
+	--xcor-scores /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-253363229/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.no_chrM.R1.25M.cc.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-261122588/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.no_chrM.R1.25M.cc.qc \
+	--idr-plots /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-70606086/rep1-rep2.idr0.05.unthresholded-peaks.txt.png \
+	--idr-plots-pr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1464823837/rep1-pr.idr0.05.unthresholded-peaks.txt.png /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1472583196/rep2-pr.idr0.05.unthresholded-peaks.txt.png \
+	--idr-plot-ppr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/1506752955/ppr.idr0.05.unthresholded-peaks.txt.png \
+	--frip-macs2-qcs /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1746567425/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.bfilt.frip.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1754326784/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pval0.01.300K.bfilt.frip.qc \
+	--frip-macs2-qcs-pr1 /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-17977553/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.pval0.01.300K.bfilt.frip.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-25736912/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr1.pval0.01.300K.bfilt.frip.qc \
+	--frip-macs2-qcs-pr2 /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/612481072/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.pval0.01.300K.bfilt.frip.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/604721713/20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim.merged.nodup.tn5.pr2.pval0.01.300K.bfilt.frip.qc \
+	--frip-macs2-qc-pooled /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/1606162913/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pooled.pval0.01.300K.bfilt.frip.qc \
+	--frip-macs2-qc-ppr1 /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-515376347/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr1.pooled.pval0.01.300K.bfilt.frip.qc \
+	--frip-macs2-qc-ppr2 /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-523135706/20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim.merged.nodup.tn5.pr2.pooled.pval0.01.300K.bfilt.frip.qc \
+	--frip-idr-qcs /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-579407800/rep1-rep2.idr0.05.bfilt.frip.qc \
+	--frip-idr-qcs-pr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1973625551/rep1-pr.idr0.05.bfilt.frip.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1981384910/rep2-pr.idr0.05.bfilt.frip.qc \
+	--frip-idr-qc-ppr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/997951241/ppr.idr0.05.bfilt.frip.qc \
+	--frip-overlap-qcs /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/223064920/rep1-rep2.overlap.bfilt.frip.qc \
+	--frip-overlap-qcs-pr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1296793567/rep1-pr.overlap.bfilt.frip.qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1304552926/rep2-pr.overlap.bfilt.frip.qc \
+	--frip-overlap-qc-ppr /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-439594471/ppr.overlap.bfilt.frip.qc \
+	--idr-reproducibility-qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/669645528/idr.reproducibility.qc \
+	--overlap-reproducibility-qc /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/inputs/-1639831448/overlap.reproducibility.qc \
+	--out-qc-html qc.html \
+	--out-qc-json qc.json
+
+diff qc.json /dev/null | wc -l > qc_json_match.txt[0m
+[2018-10-27 03:55:57,43] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.qc_report:NA:1]: executing: /bin/bash /users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/execution/script
+[2018-10-27 03:55:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.qc_report:NA:1]: job id: 92272
+[2018-10-27 03:55:59,44] [info] BackgroundConfigAsyncJobExecutionActor [[38;5;2m9a4f124b[0matac.qc_report:NA:1]: Status change from - to Done
+[2018-10-27 03:56:01,03] [info] WorkflowExecutionActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 [[38;5;2m9a4f124b[0m]: Workflow atac complete. Final Outputs:
+{
+  "atac.report": "/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/execution/glob-eae855c82d0f7e2185388856e7b2cc7b/qc.html",
+  "atac.qc_json_match": false,
+  "atac.qc_json": "/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/execution/glob-3440f922973abb7a616aaf203e0db08b/qc.json"
+}
+[2018-10-27 03:56:01,08] [info] WorkflowManagerActor WorkflowActor-9a4f124b-b39c-49bb-acb6-4a2240aae848 is in a terminal state: WorkflowSucceededState
+[2018-10-27 03:57:00,11] [info] SingleWorkflowRunnerActor workflow finished with status 'Succeeded'.
+{
+  "outputs": {
+    "atac.qc_json_match": false,
+    "atac.qc_json": "/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/execution/glob-3440f922973abb7a616aaf203e0db08b/qc.json",
+    "atac.report": "/users/xli6/scripts/atacseq/atac_durga/cromwell-executions/atac/9a4f124b-b39c-49bb-acb6-4a2240aae848/call-qc_report/execution/glob-eae855c82d0f7e2185388856e7b2cc7b/qc.html"
+  },
+  "id": "9a4f124b-b39c-49bb-acb6-4a2240aae848"
+}
+[2018-10-27 03:57:04,50] [info] Workflow polling stopped
+[2018-10-27 03:57:04,52] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
+[2018-10-27 03:57:04,53] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
+[2018-10-27 03:57:04,53] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
+[2018-10-27 03:57:04,53] [info] Aborting all running workflows.
+[2018-10-27 03:57:04,53] [info] JobExecutionTokenDispenser stopped
+[2018-10-27 03:57:04,53] [info] WorkflowStoreActor stopped
+[2018-10-27 03:57:04,53] [info] WorkflowLogCopyRouter stopped
+[2018-10-27 03:57:04,53] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
+[2018-10-27 03:57:04,54] [info] WorkflowManagerActor All workflows finished
+[2018-10-27 03:57:04,54] [info] WorkflowManagerActor stopped
+[2018-10-27 03:57:04,54] [info] Connection pools shut down
+[2018-10-27 03:57:04,54] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
+[2018-10-27 03:57:04,54] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
+[2018-10-27 03:57:04,54] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
+[2018-10-27 03:57:04,54] [info] SubWorkflowStoreActor stopped
+[2018-10-27 03:57:04,54] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
+[2018-10-27 03:57:04,54] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
+[2018-10-27 03:57:04,54] [info] Shutting down IoProxy - Timeout = 1800 seconds
+[2018-10-27 03:57:04,54] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
+[2018-10-27 03:57:04,54] [info] JobStoreActor stopped
+[2018-10-27 03:57:04,54] [info] KvWriteActor Shutting down: 0 queued messages to process
+[2018-10-27 03:57:04,54] [info] WriteMetadataActor Shutting down: 0 queued messages to process
+[2018-10-27 03:57:04,54] [info] DockerHashActor stopped
+[2018-10-27 03:57:04,54] [info] CallCacheWriteActor stopped
+[2018-10-27 03:57:04,54] [info] IoProxy stopped
+[2018-10-27 03:57:04,54] [info] ServiceRegistryActor stopped
+[2018-10-27 03:57:04,56] [info] Database closed
+[2018-10-27 03:57:04,56] [info] Stream materializer shut down
+[2018-10-27 03:57:04,61] [info] Automatic shutdown of the async connection
+[2018-10-27 03:57:04,61] [info] Gracefully shutdown sentry threads.
+[2018-10-27 03:57:04,62] [info] Shutdown finished.
