@@ -1,0 +1,1 @@
+ls -1 ../../atac_durga/pipeline_output/atac/*/call-qc_report/execution/qc.html | awk 'BEGIN{count=1}{print "cp "$1" qc_"count".html"; count =count+1}'
