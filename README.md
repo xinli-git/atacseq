@@ -18,6 +18,7 @@
 * https://xinli-git.github.io/atacseq/20181027/qc_14.html
 * https://xinli-git.github.io/atacseq/20181027/qc_15.html
 * https://xinli-git.github.io/atacseq/20181027/qc_16.html
+* https://xinli-git.github.io/atacseq/20181027/qc_17.html
 
 ## multiqc 
 
