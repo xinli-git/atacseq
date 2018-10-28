@@ -1,6 +1,7 @@
 Sample	Bowtie 2_mqc-generalstats-bowtie_2-overall_alignment_rate	Samtools Flagstat_mqc-generalstats-samtools_flagstat-mapped_passed	Picard_mqc-generalstats-picard-PERCENT_DUPLICATION
 20180404-3-muscle-1-5_S16_L001_R1_001.trim	98.97	74534512	0.061406
 20180720-5-muscle-frozen_S15_L001_R1_001.trim	98.64	45716304	0.094015
+20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim	93.42	426268	0.007336
 20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim	98.88	16972830	0.096787
 20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim	95.67	18904942	0.115093
 20180725-4-Liver-002-piece_S4_L001_R1_001.trim	98.79	42805720	0.28028
@@ -14,9 +15,9 @@ Sample	Bowtie 2_mqc-generalstats-bowtie_2-overall_alignment_rate	Samtools Flagst
 20180815-13-Adipose-002-piece_S13_L001_R1_001.trim	98.96	46925392	0.044284
 20180815-14-Adipose-002-powder_S14_L001_R1_001.trim	99.06	35888884	0.047918
 20180815-9-Heart-002-piece_S9_L001_R1_001.trim	57.69	20877366	0.375182
-Undetermined_S0_L001_R1_001.trim	83.63	7688168	0.05909
 merge_fastqs_R1_20180404-3-muscle-1-5_S16_L001_R1_001.trim	98.97		
 merge_fastqs_R1_20180720-5-muscle-frozen_S15_L001_R1_001.trim	98.64		
+merge_fastqs_R1_20180725-1-Gastroc-002-piece_S1_L001_R1_001.trim	93.42		
 merge_fastqs_R1_20180725-2-Gastroc-002-powder_S2_L001_R1_001.trim	98.88		
 merge_fastqs_R1_20180725-3-Gastroc-002-powder_S3_L001_R1_001.trim	95.67		
 merge_fastqs_R1_20180725-4-Liver-002-piece_S4_L001_R1_001.trim	98.79		
@@ -30,4 +31,3 @@ merge_fastqs_R1_20180815-12-Lung-002-powder_S12_L001_R1_001.trim	98.82
 merge_fastqs_R1_20180815-13-Adipose-002-piece_S13_L001_R1_001.trim	98.96		
 merge_fastqs_R1_20180815-14-Adipose-002-powder_S14_L001_R1_001.trim	99.06		
 merge_fastqs_R1_20180815-9-Heart-002-piece_S9_L001_R1_001.trim	57.69		
-merge_fastqs_R1_Undetermined_S0_L001_R1_001.trim	83.63		
